@@ -75,7 +75,12 @@ dependencies {
     // Retrofit
     implementation(libs.bundles.retrofit)
 
+    // Paging 3
     implementation(libs.paging.paging)
+
+    // Room
+    implementation(libs.bundles.room)
+    kapt(libs.room.compiler)
 
     // Hilt
     implementation(libs.hilt.android)
