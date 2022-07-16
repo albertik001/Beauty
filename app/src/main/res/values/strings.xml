@@ -8,4 +8,13 @@
     <string name="appointment">Запись</string>
     <string name="do_you_have_your_salon_or_you_are_a_customer">У Вас свой салон или Вы клиент?</string>
     <string name="beApp_client">BeApp-Client</string>
+    <!--    Onboard start-->
+    <string name="distance_in_few_taps_from_next_appointment">Pасстояние в несколько нажатий от следующей процедуры</string>
+    <string name="the_application_to_salon_appointment_your_appointment_is_effortless_and_reliable">Приложение для записей в салоны. Ваша запись проста и надежна!</string>
+    <string name="find_your_best_salon">Найди свой лучший салон</string>
+    <string name="you_can_find_salon_that_you_are_good_with">Вы можете найти салон подходящий Вам.</string>
+    <string name="make_your_appointment_effortless">Сделай свою запись-легкой</string>
+    <string name="online_appointment_choose_your_time_salon_and_procedure">Запись онлайн. Выберайте свое время, салон и процедуру</string>
+    <string name="proceed">Далее</string>
+    <string name="skip">Пропустить</string>
 </resources>
