@@ -25,5 +25,4 @@ class OnboardFragment :
             mainNavController().navigateSafely(R.id.action_authenticationFlowFragment_to_mainFlowFragment)
         }
     }
-
 }
