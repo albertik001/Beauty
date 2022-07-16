@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/authentication_graph.xml"
+    android:id="@+id/authentication_graph"
     app:startDestination="@id/chooseClientOrSalonSideFragment">
 
 
@@ -20,9 +20,10 @@
         android:id="@+id/chooseClientOrSalonSideFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.authentication.appSelection.ChooseClientOrSalonSideFragment"
         android:label="fragment_choose_client_or_salon_side"
-        tools:layout="@layout/fragment_choose_client_or_salon_side" >
+        tools:layout="@layout/fragment_choose_client_or_salon_side">
         <action
             android:id="@+id/action_chooseClientOrSalonSideFragment_to_onboardFragment"
-            app:destination="@id/onboardFragment" />
+            app:destination="@id/onboardFragment"
+            app:popUpTo="@id/authentication_graph" />
     </fragment>
 </navigation>
