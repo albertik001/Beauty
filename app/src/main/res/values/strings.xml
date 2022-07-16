@@ -17,4 +17,5 @@
     <string name="online_appointment_choose_your_time_salon_and_procedure">Запись онлайн. Выберайте свое время, салон и процедуру</string>
     <string name="proceed">Далее</string>
     <string name="skip">Пропустить</string>
+    <string name="sign_in">Регистрация</string>
 </resources>

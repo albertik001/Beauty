@@ -10,4 +10,6 @@
     <color name="artisticViolet">#52379E</color>
     <color name="cendreBlue">#5B3EA2</color>
     <color name="wildBlueYonder">#7975AB</color>
+    <color name="lightGray">#E8E8E8</color>
+    <color name="white80Transparency">#CCFFFFFF</color>
 </resources>
