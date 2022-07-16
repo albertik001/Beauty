@@ -1,10 +1,10 @@
 package com.geektech.beauty.presentation.ui.fragments.authentication.onboard
 
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.geektech.beauty.R
 import com.geektech.beauty.core.base.BaseFragment
-import com.geektech.beauty.core.extensions.mainNavController
 import com.geektech.beauty.core.extensions.navigateSafely
 import com.geektech.beauty.data.local.preferences.AuthenticationPreferencesManager
 import com.geektech.beauty.databinding.FragmentOnboardBinding
@@ -38,7 +38,7 @@ class OnboardFragment :
     private fun skipOnboard() {
         binding.tvSkipOnboard.setOnClickListener {
             authenticationPreferencesManager.hasOnboardBeenSeen = true
-            mainNavController().navigateSafely(R.id.action_global_to_authenticationFlowFragment)
+            findNavController().navigateSafely(R.id.action_onboardFragment_to_signUpFragment)
         }
     }
 
@@ -52,7 +52,7 @@ class OnboardFragment :
                     )
                     else -> {
                         authenticationPreferencesManager.hasOnboardBeenSeen = true
-                        mainNavController().navigateSafely(R.id.action_global_to_authenticationFlowFragment)
+                        findNavController().navigateSafely(R.id.action_onboardFragment_to_signUpFragment)
                     }
 
                 }

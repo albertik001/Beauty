@@ -12,8 +12,8 @@
         android:label="fragment_onboard"
         tools:layout="@layout/fragment_onboard" >
         <action
-            android:id="@+id/action_onboardFragment_to_mainFlowFragment"
-            app:destination="@id/mainFlowFragment" />
+            android:id="@+id/action_onboardFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
     </fragment>
     <fragment
         android:id="@+id/mainFlowFragment"
@@ -29,5 +29,14 @@
             android:id="@+id/action_chooseClientOrSalonSideFragment_to_onboardFragment"
             app:destination="@id/onboardFragment"
             app:popUpTo="@id/authentication_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.authentication.signUp.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_mainFlowFragment"
+            app:destination="@id/mainFlowFragment" />
     </fragment>
 </navigation>
