@@ -7,4 +7,5 @@
     <string name="salons">Салоны</string>
     <string name="appointment">Запись</string>
     <string name="do_you_have_your_salon_or_you_are_a_customer">У Вас свой салон или Вы клиент?</string>
+    <string name="beApp_client">BeApp-Client</string>
 </resources>
