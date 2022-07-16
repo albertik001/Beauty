@@ -18,4 +18,5 @@
     <string name="proceed">Далее</string>
     <string name="skip">Пропустить</string>
     <string name="sign_in">Регистрация</string>
+    <string name="first_name_second_name">Имя Фамилия</string>
 </resources>
