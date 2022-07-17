@@ -8,4 +8,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="artisticViolet">#52379E</color>
+    <color name="white80Transparency">#CCFFFFFF</color>
+    <color name="blueBlack">#372E51</color>
+    <color name="starColor">#F7DE1C</color>
+    <color name="unSelectedStarColor">#979797</color>
+    <color name="lightPurple">#917AE5</color>
+
+
+    <color name="transparent">#0000</color>
+
 </resources>

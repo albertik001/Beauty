@@ -6,4 +6,8 @@
     <string name="account">Аккаунт</string>
     <string name="salons">Салоны</string>
     <string name="appointment">Запись</string>
+    <string name="name_beapp">BeApp</string>
+    <string name="hint_search">Поиск</string>
+    <string name="services_categories">Категории</string>
+    <string name="services_popular">Популярные</string>
 </resources>

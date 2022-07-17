@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view_service_popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_service_popular"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@color/white80Transparency" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tv_name_salon"
+        style="@style/baseTextViewServicesSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        app:layout_constraintStart_toEndOf="@+id/card_view_service_popular"
+        app:layout_constraintTop_toTopOf="@id/card_view_service_popular"
+        tools:text="BeStyle" />
+
+    <TextView
+        android:id="@+id/tv_name_service"
+        style="@style/baseTextViewServicesSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blueBlack"
+        app:layout_constraintStart_toStartOf="@id/tv_name_salon"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_salon"
+        tools:text="Салон красоты" />
+
+
+    <TextView
+        android:id="@+id/tv_number_rating_bar"
+        style="@style/baseTextViewServicesSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv_name_service"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_service"
+        tools:text="5.0" />
+
+    <RatingBar
+        android:id="@+id/rating_bar_salon"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:numStars="5"
+        android:rating="5.0"
+        android:theme="@style/ratingBar"
+        app:layout_constraintStart_toEndOf="@id/tv_number_rating_bar"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_service" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/lightPurple"
+        android:drawableEnd="@drawable/arrow_right"
+        android:fontFamily="@font/quicksand"
+        android:text="Записаться"
+        android:textAllCaps="false"
+        android:textColorHint="@color/white"
+        android:textSize="11sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintStart_toStartOf="@id/tv_number_rating_bar"
+        app:layout_constraintTop_toBottomOf="@id/tv_number_rating_bar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
