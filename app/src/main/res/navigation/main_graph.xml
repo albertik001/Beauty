@@ -14,5 +14,23 @@
         android:id="@+id/detailedServicesCategoryFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.DetailedServicesCategoryFragment"
         android:label="fragment_detailed_services_category"
-        tools:layout="@layout/fragment_detailed_services_category" />
+        tools:layout="@layout/fragment_detailed_services_category">
+        <action
+            android:id="@+id/action_detailedServicesCategoryFragment_to_specialistsFragment"
+            app:destination="@id/specialistsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/specialistsFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.SpecialistsFragment"
+        android:label="fragment_specialists"
+        tools:layout="@layout/fragment_specialists">
+        <action
+            android:id="@+id/action_specialistsFragment_to_specialistProfileFragment"
+            app:destination="@id/specialistProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/specialistProfileFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.profile.SpecialistProfileFragment"
+        android:label="fragment_specialist_profile"
+        tools:layout="@layout/fragment_specialist_profile" />
 </navigation>
