@@ -3,11 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/salonFragment">
 
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.main.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/salonFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.home.salon.SalonFragment"
+        android:label="fragment_salon"
+        tools:layout="@layout/fragment_salon" />
+
+
 </navigation>
