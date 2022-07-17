@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.geektech.beauty.core.extensions.loadImageWithGlide
 import com.geektech.beauty.databinding.ItemServicesBinding
 import com.geektech.beauty.presentation.models.DetailedCategoryUI
 
@@ -25,7 +26,12 @@ class DetailedServiceCategoryAdapter :
     inner class DetailedServiceCategoryViewHolder(private val binding: ItemServicesBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun onBind(detailCategory: DetailedCategoryUI) {
-
+            binding.apply {
+                imService.loadImageWithGlide(detailCategory.serviceImage)
+                tvServiceType.text = detailCategory.serviceType
+                tvServiceTime.text = "Время: ${detailCategory.serviceTime}"
+                tvServiceCost.text = "Стоимость: ${detailCategory.serviceCost}"
+            }
         }
 
     }
