@@ -1,6 +1,103 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@color/artisticViolet"
+    app:cardBackgroundColor="@color/artisticViolet"
+    app:cardCornerRadius="15dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcv_specialist_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/whiteSmoke"
+            android:shape="ring"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/im_specialist"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:scaleType="centerCrop" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tv_specialist_mastery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/mcv_specialist_image"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Парикмахер" />
+
+        <TextView
+            android:id="@+id/tv_specialist_name_and_mastery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/mcv_specialist_image"
+            app:layout_constraintTop_toBottomOf="@id/tv_specialist_mastery"
+            tools:text="Роуз-мастер индивидуал" />
+
+        <TextView
+            android:id="@+id/tv_specialist_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="17dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/mcv_specialist_image"
+            app:layout_constraintTop_toBottomOf="@id/tv_specialist_name_and_mastery"
+            tools:text="Стаж 5 лет" />
+
+        <TextView
+            android:id="@+id/tv_specialist_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginBottom="9dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/mcv_specialist_image"
+            app:layout_constraintTop_toBottomOf="@id/tv_specialist_experience"
+            tools:text="5.0" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_specialist"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:numStars="5"
+            android:rating="5.0"
+            android:theme="@style/ratingBar"
+            app:layout_constraintStart_toEndOf="@id/tv_specialist_rating"
+            app:layout_constraintTop_toBottomOf="@id/tv_specialist_experience" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
