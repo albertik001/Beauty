@@ -39,6 +39,7 @@
         style="@style/baseTextViewServicesSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:textColor="@color/blueBlack"
         app:layout_constraintStart_toStartOf="@id/tv_name_salon"
         app:layout_constraintTop_toBottomOf="@id/tv_name_salon"
@@ -50,6 +51,7 @@
         style="@style/baseTextViewServicesSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="@id/tv_name_service"
         app:layout_constraintTop_toBottomOf="@id/tv_name_service"
         tools:text="5.0" />
@@ -64,10 +66,12 @@
         android:numStars="5"
         android:rating="5.0"
         android:theme="@style/ratingBar"
+        app:layout_constraintBottom_toBottomOf="@id/tv_number_rating_bar"
         app:layout_constraintStart_toEndOf="@id/tv_number_rating_bar"
         app:layout_constraintTop_toBottomOf="@id/tv_name_service" />
 
     <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="4dp"
         android:layout_width="130dp"
         android:layout_height="40dp"
         android:backgroundTint="@color/lightPurple"
