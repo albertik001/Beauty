@@ -14,34 +14,32 @@ class SpecialistsViewModel @Inject constructor() : BaseViewModel() {
     private fun fetchSpecialists() {
         val list = listOf(
             ServiceCategorySpecialistUI(
-                "http://res.heraldm.com/content/image/2021/04/12/20210412000524_0.jpg",
+                "Парикмахер",
+                "https://res.heraldm.com/content/image/2021/04/12/20210412000524_0.jpg",
                 "Шыпыргуль-мастер индивидуал.",
                 25,
-                5.0
+                4.0
             ),
             ServiceCategorySpecialistUI(
-                "http://res.heraldm.com/content/image/2021/04/12/20210412000524_0.jpg",
+                "Парикмахер",
+                "https://res.heraldm.com/content/image/2021/04/12/20210412000524_0.jpg",
                 "Шыпыргуль-мастер индивидуал.",
                 25,
-                5.0
+                3.5
             ),
             ServiceCategorySpecialistUI(
-                "http://res.heraldm.com/content/image/2021/04/12/20210412000524_0.jpg",
+                "Парикмахер",
+                "https://res.heraldm.com/content/image/2021/04/12/20210412000524_0.jpg",
                 "Шыпыргуль-мастер индивидуал.",
                 25,
-                5.0
+                2.1
             ),
             ServiceCategorySpecialistUI(
-                "http://res.heraldm.com/content/image/2021/04/12/20210412000524_0.jpg",
+                "Парикмахер",
+                "https://res.heraldm.com/content/image/2021/04/12/20210412000524_0.jpg",
                 "Шыпыргуль-мастер индивидуал.",
                 25,
-                5.0
-            ),
-            ServiceCategorySpecialistUI(
-                "http://res.heraldm.com/content/image/2021/04/12/20210412000524_0.jpg",
-                "Шыпыргуль-мастер индивидуал.",
-                25,
-                5.0
+                1.9
             ),
         )
         _specialistsState.value = list
