@@ -37,5 +37,6 @@
     <string name="services_popular">Популярные</string>
     <string name="services">Услуги</string>
     <string name="haircut">Стрижка</string>
+    <string name="specialists">Специалисты</string>
     <!--    Home end-->
 </resources>
