@@ -17,6 +17,15 @@
     <string name="online_appointment_choose_your_time_salon_and_procedure">Запись онлайн. Выберайте свое время, салон и процедуру</string>
     <string name="proceed">Далее</string>
     <string name="skip">Пропустить</string>
-    <string name="sign_in">Регистрация</string>
+    <string name="sign_up">Регистрация</string>
+    <string name="sign_in">Войти</string>
     <string name="first_name_second_name">Имя Фамилия</string>
+    <string name="email">Адрес эл.почты</string>
+    <string name="or">или</string>
+    <string name="sign_in_with_google">Войти с Google</string>
+    <string name="this_field_mustnt_be_empty">Это поле не должно быть пустым</string>
+    <string name="first_name_and_last_name_must_contain_at_least_6_characters">Имя и фамилия должна состоять из хотя бы 6 символов</string>
+    <string name="email_must_contain_at_least_8_characters">Электронная почта должна составлять хотя бы 8 символов в длину</string>
+    <string name="this_doesnt_look_like_email">Это не похоже на электронную почту</string>
+    
 </resources>

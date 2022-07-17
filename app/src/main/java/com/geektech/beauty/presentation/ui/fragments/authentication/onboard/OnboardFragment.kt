@@ -23,11 +23,20 @@ class OnboardFragment :
     override val viewModel by viewModels<OnboardViewModel>()
     override fun initialize() {
         instantiateViewPager()
+
+        navigateToSignUpIfOnboardHasBeenSeen()
     }
+
 
     private fun instantiateViewPager() {
         binding.viewPagerOnboard.adapter = OnboardViewPagerAdapter(requireActivity())
     }
+
+    private fun navigateToSignUpIfOnboardHasBeenSeen() {
+        if (authenticationPreferencesManager.hasOnboardBeenSeen)
+            findNavController().navigateSafely(R.id.action_onboardFragment_to_signUpFragment)
+    }
+
 
     override fun performListeners() {
         proceedToTheNextStep()

@@ -6,6 +6,10 @@
     tools:ignore="InvalidNavigation">
     <action
         android:id="@+id/action_global_to_authenticationFlowFragment"
+        app:destination="@id/authenticationFlowFragment"
+        app:popUpTo="@id/nav_graph" />
+    <action
+        android:id="@+id/action_global_to_mainFlowFragment"
         app:destination="@id/mainFlowFragment"
         app:popUpTo="@id/nav_graph" />
 
