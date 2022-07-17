@@ -1,9 +1,6 @@
 package com.geektech.beauty.presentation.ui.fragments.main.home
 
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.repeatOnLifecycle
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.geektech.beauty.R
 import com.geektech.beauty.core.base.BaseFragment
@@ -25,16 +22,12 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeViewModel>(R.layout.f
     }
 
     override fun launchObservers() {
-        viewLifecycleOwner.lifecycleScope.launchWhenStarted {
-            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.categoryState.observe(this@HomeFragment) {
-                    adapter.submitList(it)
+        viewModel.categoryState.observe(viewLifecycleOwner) {
+            adapter.submitList(it)
+        }
 
-                }
-                viewModel.popularState.observe(this@HomeFragment) {
-                    popularAdapter.submitList(it)
-                }
-            }
+        viewModel.popularState.observe(viewLifecycleOwner) {
+            popularAdapter.submitList(it)
         }
     }
 }
