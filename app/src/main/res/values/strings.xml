@@ -35,5 +35,7 @@
     <string name="hint_search">Поиск</string>
     <string name="services_categories">Категории</string>
     <string name="services_popular">Популярные</string>
-<!--    Home end-->
+    <string name="services">Услуги</string>
+    <string name="haircut">Стрижка</string>
+    <!--    Home end-->
 </resources>
