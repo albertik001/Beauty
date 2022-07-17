@@ -1,4 +1,4 @@
-package com.geektech.beauty.presentation.ui.adapters
+package com.geektech.beauty.presentation.ui.adapters.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

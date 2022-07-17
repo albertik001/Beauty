@@ -13,6 +13,8 @@ class ServicesFragment :
     BaseFragment<FragmentServicesBinding, ServicesViewModel>(R.layout.fragment_services) {
     override val binding by viewBinding(FragmentServicesBinding::bind)
     override val viewModel by viewModels<ServicesViewModel>()
+    override fun initialize() {
+    }
 
 
 }
