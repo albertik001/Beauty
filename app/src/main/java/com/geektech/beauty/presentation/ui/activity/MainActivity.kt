@@ -2,6 +2,7 @@ package com.geektech.beauty.presentation.ui.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.fragment.NavHostFragment
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.geektech.beauty.R
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     lateinit var authenticationPreferencesManager: AuthenticationPreferencesManager
     private val binding by viewBinding(ActivityMainBinding::bind)
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         defineStartDestination()
     }
