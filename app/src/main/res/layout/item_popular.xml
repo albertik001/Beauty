@@ -71,9 +71,9 @@
         app:layout_constraintTop_toBottomOf="@id/tv_name_service" />
 
     <com.google.android.material.button.MaterialButton
-        android:layout_marginTop="4dp"
         android:layout_width="130dp"
         android:layout_height="40dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="@color/lightPurple"
         android:drawableEnd="@drawable/arrow_right"
         android:fontFamily="@font/quicksand"
