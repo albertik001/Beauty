@@ -13,11 +13,16 @@
     <color name="wildBlueYonder">#7975AB</color>
     <color name="lightGray">#E8E8E8</color>
     <color name="white80Transparency">#CCFFFFFF</color>
+    <color name="transparent">#0000</color>
     <color name="aliceBlue">#E3F0FF</color>
     <color name="mauve">#E8C2FF</color>
     <color name="snow">#FCFCFC</color>
     <color name="dimmedGray">#807975AB</color>
     <color name="burntGrape">#605D74</color>
     <color name="nero">#222222</color>
+    <color name="blueBlack">#372E51</color>
+    <color name="starColor">#F7DE1C</color>
+    <color name="unSelectedStarColor">#979797</color>
+    <color name="lightPurple">#917AE5</color>
 
 </resources>

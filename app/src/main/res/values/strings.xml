@@ -28,5 +28,12 @@
     <string name="email_must_contain_at_least_8_characters">Электронная почта должна составлять хотя бы 8 символов в длину</string>
     <string name="this_doesnt_look_like_email">Это не похоже на электронную почту</string>
     <string name="beApp_business">BeApp-Business</string>
+<!--    Onboard end-->
 
+<!--    Home start-->
+    <string name="name_beapp">BeApp</string>
+    <string name="hint_search">Поиск</string>
+    <string name="services_categories">Категории</string>
+    <string name="services_popular">Популярные</string>
+<!--    Home end-->
 </resources>

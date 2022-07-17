@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name_beapp">BeApp</string>
+    <string name="hint_search">Поиск</string>
+    <string name="services_popular">Популярные</string>
+</resources>
