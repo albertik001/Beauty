@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
     android:layout_marginStart="16dp"
     android:layout_marginEnd="16dp"
     app:cardBackgroundColor="@color/artisticViolet"
@@ -29,6 +30,7 @@
             <ImageView
                 android:id="@+id/im_service"
                 android:layout_width="80dp"
+                android:scaleType="centerCrop"
                 android:layout_height="80dp" />
         </com.google.android.material.card.MaterialCardView>
 
