@@ -1,4 +1,4 @@
-package com.geektech.beauty.presentation.ui.fragments.main.home.specialists.profile
+package com.geektech.beauty.presentation.ui.fragments.main.home.services.specialists.profile
 
 import androidx.fragment.app.viewModels
 import by.kirich1409.viewbindingdelegate.viewBinding
