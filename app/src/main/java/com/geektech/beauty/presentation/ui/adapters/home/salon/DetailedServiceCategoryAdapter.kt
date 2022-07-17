@@ -9,7 +9,7 @@ import com.geektech.beauty.core.extensions.loadImageWithGlide
 import com.geektech.beauty.databinding.ItemServicesBinding
 import com.geektech.beauty.presentation.models.DetailedCategoryUI
 
-class DetailedServiceCategoryAdapter :
+class DetailedServiceCategoryAdapter(val onItemClick: () -> Unit) :
     ListAdapter<DetailedCategoryUI, DetailedServiceCategoryAdapter.DetailedServiceCategoryViewHolder>(
         Companion
     ) {
@@ -31,6 +31,9 @@ class DetailedServiceCategoryAdapter :
                 tvServiceType.text = detailCategory.serviceType
                 tvServiceTime.text = "Время: ${detailCategory.serviceTime}"
                 tvServiceCost.text = "Стоимость: ${detailCategory.serviceCost}"
+                root.setOnClickListener {
+                    onItemClick()
+                }
             }
         }
 

@@ -6,6 +6,7 @@ import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.geektech.beauty.R
 import com.geektech.beauty.core.base.BaseFragment
+import com.geektech.beauty.core.extensions.navigateSafely
 import com.geektech.beauty.databinding.FragmentDetailedServicesCategoryBinding
 import com.geektech.beauty.presentation.ui.adapters.home.salon.DetailedServiceCategoryAdapter
 import dagger.hilt.android.AndroidEntryPoint
@@ -16,8 +17,8 @@ class DetailedServicesCategoryFragment :
     BaseFragment<FragmentDetailedServicesCategoryBinding, DetailedServicesCategoryViewModel>(R.layout.fragment_detailed_services_category) {
     override val binding by viewBinding(FragmentDetailedServicesCategoryBinding::bind)
     override val viewModel by viewModels<DetailedServicesCategoryViewModel>()
-    private val detailedServiceCategoryAdapter =
-        DetailedServiceCategoryAdapter()
+    private val detailedServiceCategoryAdapter = DetailedServiceCategoryAdapter(this::onItemClick)
+
 
     override fun initialize() {
         instantiateRecycler()
@@ -25,12 +26,17 @@ class DetailedServicesCategoryFragment :
 
     override fun performListeners() {
         navigateBackToHome()
+        navigateToCategorySpecialists()
     }
 
+
     private fun navigateBackToHome() {
-        binding.imBack.setOnClickListener {
+        binding.toolbar.setNavigationOnClickListener {
             findNavController().navigateUp()
         }
+    }
+
+    private fun navigateToCategorySpecialists() {
     }
 
     private fun instantiateRecycler() {
@@ -45,5 +51,8 @@ class DetailedServicesCategoryFragment :
         }
     }
 
+    private fun onItemClick() {
+        findNavController().navigateSafely(R.id.action_detailedServicesCategoryFragment_to_specialistsFragment)
+    }
 
 }
