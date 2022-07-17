@@ -38,5 +38,6 @@
     <string name="services">Услуги</string>
     <string name="haircut">Стрижка</string>
     <string name="specialists">Специалисты</string>
+    <string name="master">Мастер</string>
     <!--    Home end-->
 </resources>
