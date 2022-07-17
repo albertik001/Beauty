@@ -1,4 +1,4 @@
-package com.geektech.beauty.presentation.ui.fragments.authentication.appSelection
+package com.geektech.beauty.presentation.ui.fragments.authentication.sideSelection
 
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController

@@ -22,7 +22,7 @@
         tools:layout="@layout/fragment_main_flow" />
     <fragment
         android:id="@+id/chooseClientOrSalonSideFragment"
-        android:name="com.geektech.beauty.presentation.ui.fragments.authentication.appSelection.ChooseClientOrSalonSideFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.authentication.sideSelection.ChooseClientOrSalonSideFragment"
         android:label="fragment_choose_client_or_salon_side"
         tools:layout="@layout/fragment_choose_client_or_salon_side">
         <action
