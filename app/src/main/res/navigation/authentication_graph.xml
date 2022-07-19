@@ -10,7 +10,7 @@
         android:id="@+id/onboardFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.authentication.onboard.OnboardFragment"
         android:label="fragment_onboard"
-        tools:layout="@layout/fragment_onboard" >
+        tools:layout="@layout/fragment_onboard">
         <action
             android:id="@+id/action_onboardFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
