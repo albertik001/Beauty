@@ -15,10 +15,10 @@
         app:cardCornerRadius="15dp">
 
         <ImageView
-            android:scaleType="centerCrop"
             android:id="@+id/image_service_categories"
             android:layout_width="110dp"
             android:layout_height="110dp"
+            android:scaleType="centerCrop"
             android:src="@color/white80Transparency" />
 
     </com.google.android.material.card.MaterialCardView>

@@ -69,12 +69,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_popular"
-        tools:listitem="@layout/item_popular"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_service_popular" />
+        app:layout_constraintTop_toBottomOf="@id/tv_service_popular"
+        tools:listitem="@layout/item_popular" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
