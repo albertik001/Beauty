@@ -60,4 +60,12 @@ class SalonViewModel @Inject constructor() : BaseViewModel() {
         return listSalonInterior
     }
 
+    fun getOurSpecialistWork(): ArrayList<OurSpecialistWorkUI> {
+        val listOurSpecialistWork = arrayListOf<OurSpecialistWorkUI>()
+        for (i in 1..10) {
+            listOurSpecialistWork.add(OurSpecialistWorkUI("https://n1s2.starhit.ru/12/a2/f1/12a2f129636048a79f48009e07500636/444x460_0_05197487bc0706d7560da0de61000a39@480x497_0xac120003_18487509071595265174.jpg"))
+        }
+        return listOurSpecialistWork
+    }
+
 }

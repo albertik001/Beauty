@@ -6,10 +6,7 @@ import com.geektech.beauty.R
 import com.geektech.beauty.core.base.BaseFragment
 import com.geektech.beauty.databinding.FragmentSalonBinding
 import com.geektech.beauty.presentation.models.PromotionsUI
-import com.geektech.beauty.presentation.ui.adapters.ButtonServicesAdapter
-import com.geektech.beauty.presentation.ui.adapters.InteriorAdapter
-import com.geektech.beauty.presentation.ui.adapters.PromotionsPagerAdapter
-import com.geektech.beauty.presentation.ui.adapters.TopSpecialistAdapter
+import com.geektech.beauty.presentation.ui.adapters.*
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -19,6 +16,7 @@ class SalonFragment : BaseFragment<FragmentSalonBinding, SalonViewModel>(R.layou
     private val buttonServicesAdapter = ButtonServicesAdapter()
     private val topSpecialistAdapter = TopSpecialistAdapter()
     private val salonOurInteriorAdapter = InteriorAdapter()
+    private val salonOurSpecialistWorkAdapter = OurSpecialistWorkAdapter()
 
     override fun initialize() {
         setPromotionsPager(viewModel.getPromotionBanners())
@@ -26,6 +24,7 @@ class SalonFragment : BaseFragment<FragmentSalonBinding, SalonViewModel>(R.layou
         setButtonServices()
         setTopSpecialist()
         setSalonInterior()
+        setSalonOurSpecialistWork()
     }
 
     private fun setSalonInterior() {
@@ -52,6 +51,11 @@ class SalonFragment : BaseFragment<FragmentSalonBinding, SalonViewModel>(R.layou
             tvLocationAddress.text = salonInfo.addressSalon
             tvPhoneNumber.text = salonInfo.phoneNumber
         }
+    }
+
+    private fun setSalonOurSpecialistWork() {
+        binding.recyclerViewWorksMasters.adapter = salonOurSpecialistWorkAdapter
+        salonOurSpecialistWorkAdapter.submitList(viewModel.getOurSpecialistWork())
     }
 
     private fun setPromotionsPager(data: ArrayList<PromotionsUI>) = with(
