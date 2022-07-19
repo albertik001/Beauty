@@ -43,7 +43,7 @@ class SpecialistsFragment :
     }
 
     private fun onItemClick(position: Int) {
-        findNavController().navigateSafely(R.id.action_specialistsFragment_to_specialistProfileFragment)
+        findNavController().navigateSafely(R.id.action_specialistsFragment_to_verifyAppointmentFragment)
     }
 
 }
