@@ -25,12 +25,34 @@
         android:label="fragment_specialists"
         tools:layout="@layout/fragment_specialists">
         <action
-            android:id="@+id/action_specialistsFragment_to_specialistProfileFragment"
-            app:destination="@id/specialistProfileFragment" />
+            android:id="@+id/action_specialistsFragment_to_verifyAppointmentFragment"
+            app:destination="@id/verifyAppointmentFragment" />
     </fragment>
     <fragment
         android:id="@+id/specialistProfileFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.profile.SpecialistProfileFragment"
         android:label="fragment_specialist_profile"
         tools:layout="@layout/fragment_specialist_profile" />
+    <dialog
+        android:id="@+id/appointmentVerificationFailedDialogFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.appointment.AppointmentVerificationFailedDialogFragment"
+        android:label="fragment_appointment_verification_failed_dialog"
+        tools:layout="@layout/fragment_appointment_verification_failed_dialog" />
+    <fragment
+        android:id="@+id/verifyAppointmentFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.appointment.VerifyAppointmentFragment"
+        android:label="fragment_verify_appointment"
+        tools:layout="@layout/fragment_verify_appointment">
+        <action
+            android:id="@+id/action_verifyAppointmentFragment_to_appointmentVerificationFailedDialogFragment"
+            app:destination="@id/appointmentVerificationFailedDialogFragment" />
+        <action
+            android:id="@+id/action_verifyAppointmentFragment_to_appointmentVerificationDialogFragment"
+            app:destination="@id/appointmentVerificationDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/appointmentVerificationDialogFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.appointment.AppointmentVerificationDialogFragment"
+        android:label="fragment_appointment_verification_dialog"
+        tools:layout="@layout/fragment_appointment_verification_dialog" />
 </navigation>
