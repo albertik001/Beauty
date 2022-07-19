@@ -24,6 +24,11 @@ class DetailedServicesCategoryFragment :
         instantiateRecycler()
     }
 
+    private fun instantiateRecycler() {
+        binding.rvServices.adapter = detailedServiceCategoryAdapter
+    }
+
+
     override fun performListeners() {
         navigateBackToHome()
         navigateToCategorySpecialists()
@@ -39,9 +44,6 @@ class DetailedServicesCategoryFragment :
     private fun navigateToCategorySpecialists() {
     }
 
-    private fun instantiateRecycler() {
-        binding.rvServices.adapter = detailedServiceCategoryAdapter
-    }
 
     override fun launchObservers() {
         viewLifecycleOwner.lifecycleScope.launchWhenStarted {
