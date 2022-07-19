@@ -1,10 +1,7 @@
 package com.geektech.beauty.presentation.ui.fragments.main.home.salon
 
 import com.geektech.beauty.core.base.BaseViewModel
-import com.geektech.beauty.presentation.models.ButtonServicesUI
-import com.geektech.beauty.presentation.models.PromotionsUI
-import com.geektech.beauty.presentation.models.SalonInformationUI
-import com.geektech.beauty.presentation.models.TopSpecialistUI
+import com.geektech.beauty.presentation.models.*
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
@@ -53,6 +50,14 @@ class SalonViewModel @Inject constructor() : BaseViewModel() {
             )
         }
         return listTopSpecialist
+    }
+
+    fun getSalonInterior(): ArrayList<InteriorUI> {
+        val listSalonInterior = arrayListOf<InteriorUI>()
+        for (i in 1..10) {
+            listSalonInterior.add(InteriorUI("https://upload.wikimedia.org/wikipedia/commons/8/89/Jaguar_X300_interior_%281995%2C_Warm_charcoal_%26_Cream%29.jpg"))
+        }
+        return listSalonInterior
     }
 
 }

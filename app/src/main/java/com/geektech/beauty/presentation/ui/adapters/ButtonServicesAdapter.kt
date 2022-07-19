@@ -40,7 +40,5 @@ class ButtonServicesAdapter :
             oldItem: ButtonServicesUI,
             newItem: ButtonServicesUI
         ) = oldItem == newItem
-
-
     }
 }
