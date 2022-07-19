@@ -5,8 +5,8 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.geektech.beauty.R
 import com.geektech.beauty.core.base.BaseFragment
 import com.geektech.beauty.databinding.FragmentHomeBinding
-import com.geektech.beauty.presentation.ui.adapters.ServiceCategoryAdapter
-import com.geektech.beauty.presentation.ui.adapters.ServicePopularAdapter
+import com.geektech.beauty.presentation.ui.adapters.home.ServiceCategoryAdapter
+import com.geektech.beauty.presentation.ui.adapters.home.ServicePopularAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
