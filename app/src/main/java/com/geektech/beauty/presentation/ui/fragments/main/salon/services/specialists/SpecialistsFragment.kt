@@ -25,10 +25,10 @@ class SpecialistsFragment :
     }
 
     override fun performListeners() {
-        navigateBackToServices()
+        navigateBack()
     }
 
-    private fun navigateBackToServices() {
+    private fun navigateBack() {
         binding.toolbar.setNavigationOnClickListener {
             findNavController().navigateUp()
         }
@@ -43,7 +43,7 @@ class SpecialistsFragment :
     }
 
     private fun onItemClick(position: Int) {
-        findNavController().navigateSafely(R.id.action_specialistsFragment_to_verifyAppointmentFragment)
+        findNavController().navigateSafely(R.id.action_specialistsFragment_to_specialistProfileFragment)
     }
 
 }

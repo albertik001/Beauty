@@ -9,13 +9,17 @@ import com.geektech.beauty.core.extensions.loadImageWithGlide
 import com.geektech.beauty.databinding.ItemTopSpecialistBinding
 import com.geektech.beauty.presentation.models.TopSpecialistUI
 
-class TopSpecialistAdapter :
+class TopSpecialistAdapter(private val onItemClick: () -> Unit) :
     ListAdapter<TopSpecialistUI, TopSpecialistAdapter.SpecialistViewHolder>(Companion) {
     inner class SpecialistViewHolder(private val binding: ItemTopSpecialistBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(it: TopSpecialistUI?) {
-            binding.imageServiceCategories.loadImageWithGlide(it?.imageProfile)
-            binding.tvNameTopSpecialist.text = it?.nameMaster
+        fun bind(it: TopSpecialistUI?) = with(binding) {
+            imageServiceCategories.loadImageWithGlide(it?.imageProfile)
+            tvNameTopSpecialist.text = it?.nameMaster
+            root.setOnClickListener {
+                onItemClick()
+
+            }
         }
 
     }

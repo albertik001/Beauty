@@ -1,9 +1,11 @@
 package com.geektech.beauty.presentation.ui.fragments.main.home.salon
 
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.geektech.beauty.R
 import com.geektech.beauty.core.base.BaseFragment
+import com.geektech.beauty.core.extensions.navigateSafely
 import com.geektech.beauty.databinding.FragmentSalonBinding
 import com.geektech.beauty.presentation.models.PromotionsUI
 import com.geektech.beauty.presentation.ui.adapters.*
@@ -13,8 +15,12 @@ import dagger.hilt.android.AndroidEntryPoint
 class SalonFragment : BaseFragment<FragmentSalonBinding, SalonViewModel>(R.layout.fragment_salon) {
     override val binding by viewBinding(FragmentSalonBinding::bind)
     override val viewModel by viewModels<SalonViewModel>()
-    private val buttonServicesAdapter = ButtonServicesAdapter()
-    private val topSpecialistAdapter = TopSpecialistAdapter()
+    private val buttonServicesAdapter = ButtonServicesAdapter(this::onCategoryClickListener)
+
+
+    private val topSpecialistAdapter = TopSpecialistAdapter(this::onItemClick)
+
+
     private val salonOurInteriorAdapter = InteriorAdapter()
     private val salonOurSpecialistWorkAdapter = OurSpecialistWorkAdapter()
 
@@ -63,6 +69,14 @@ class SalonFragment : BaseFragment<FragmentSalonBinding, SalonViewModel>(R.layou
     ) {
         adapter = PromotionsPagerAdapter(data)
         binding.wormDotsIndicator.attachTo(this)
+    }
+
+    private fun onCategoryClickListener() {
+        findNavController().navigateSafely(R.id.action_salonFragment_to_detailedServicesCategoryFragment)
+    }
+
+    private fun onItemClick() {
+        findNavController().navigateSafely(R.id.action_salonFragment_to_specialistProfileFragment)
     }
 
 }

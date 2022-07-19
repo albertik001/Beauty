@@ -9,7 +9,7 @@ import com.geektech.beauty.core.extensions.loadImageWithGlide
 import com.geektech.beauty.databinding.ItemCategoriesBinding
 import com.geektech.beauty.presentation.models.CategoryUI
 
-class ServiceCategoryAdapter() :
+class ServiceCategoryAdapter :
     ListAdapter<CategoryUI, ServiceCategoryAdapter.CategoryViewHolder>(BaseDiffUtil()) {
 
 
@@ -28,9 +28,10 @@ class ServiceCategoryAdapter() :
 
     inner class CategoryViewHolder(private val binding: ItemCategoriesBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(it: CategoryUI) {
-            binding.imageServiceCategories.loadImageWithGlide(it.imageBanner)
-            binding.tvNameService.text = it.nameService
+        fun bind(it: CategoryUI) = with(binding) {
+            imageServiceCategories.loadImageWithGlide(it.imageBanner)
+            tvNameService.text = it.nameService
+
         }
 
     }

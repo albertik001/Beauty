@@ -17,7 +17,7 @@
             android:id="@+id/toolbar"
             style="@style/baseToolbar"
             android:layout_width="match_parent"
-            android:layout_height="33dp"
+            android:layout_height="?actionBarSize"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:navigationIcon="@drawable/ic_back_left">

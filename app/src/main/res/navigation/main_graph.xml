@@ -9,14 +9,25 @@
         android:id="@+id/homeFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.main.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_salonFragment"
+            app:destination="@id/salonFragment" />
+    </fragment>
     <fragment
         android:id="@+id/salonFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.main.home.salon.SalonFragment"
         android:label="fragment_salon"
-        tools:layout="@layout/fragment_salon" />
+        tools:layout="@layout/fragment_salon" >
+        <action
+            android:id="@+id/action_salonFragment_to_specialistProfileFragment"
+            app:destination="@id/specialistProfileFragment" />
+        <action
+            android:id="@+id/action_salonFragment_to_detailedServicesCategoryFragment"
+            app:destination="@id/detailedServicesCategoryFragment" />
+    </fragment>
 
-
+    <fragment
         android:id="@+id/detailedServicesCategoryFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.DetailedServicesCategoryFragment"
         android:label="fragment_detailed_services_category"
@@ -31,14 +42,18 @@
         android:label="fragment_specialists"
         tools:layout="@layout/fragment_specialists">
         <action
-            android:id="@+id/action_specialistsFragment_to_verifyAppointmentFragment"
-            app:destination="@id/verifyAppointmentFragment" />
+            android:id="@+id/action_specialistsFragment_to_specialistProfileFragment"
+            app:destination="@id/specialistProfileFragment" />
     </fragment>
     <fragment
         android:id="@+id/specialistProfileFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.profile.SpecialistProfileFragment"
         android:label="fragment_specialist_profile"
-        tools:layout="@layout/fragment_specialist_profile" />
+        tools:layout="@layout/fragment_specialist_profile" >
+        <action
+            android:id="@+id/action_specialistProfileFragment_to_verifyAppointmentFragment"
+            app:destination="@id/verifyAppointmentFragment" />
+    </fragment>
     <dialog
         android:id="@+id/appointmentVerificationFailedDialogFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.appointment.dialogs.AppointmentVerificationFailedDialogFragment"

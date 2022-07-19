@@ -30,12 +30,12 @@ class DetailedServicesCategoryFragment :
 
 
     override fun performListeners() {
-        navigateBackToHome()
+        navigateBack()
         navigateToCategorySpecialists()
     }
 
 
-    private fun navigateBackToHome() {
+    private fun navigateBack() {
         binding.toolbar.setNavigationOnClickListener {
             findNavController().navigateUp()
         }

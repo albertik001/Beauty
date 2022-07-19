@@ -17,10 +17,18 @@ class VerifyAppointmentFragment :
     override val binding by viewBinding(FragmentVerifyAppointmentBinding::bind)
     override val viewModel by viewModels<VerifyAppointmentViewModel>()
     override fun performListeners() {
+        navigateBack()
         verifyAnAppointment()
     }
 
+    private fun navigateBack() {
+        binding.toolbar.setNavigationOnClickListener {
+            findNavController().navigateUp()
+        }
+    }
+
     private fun verifyAnAppointment() {
+
         binding.btnVerifyTheAppointment.setOnClickListener {
             when (Random.nextBoolean()) {
                 true -> findNavController().navigateSafely(R.id.action_verifyAppointmentFragment_to_appointmentVerificationDialogFragment)

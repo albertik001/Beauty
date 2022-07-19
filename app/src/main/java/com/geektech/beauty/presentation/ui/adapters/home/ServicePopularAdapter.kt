@@ -9,7 +9,7 @@ import com.geektech.beauty.core.extensions.loadImageWithGlide
 import com.geektech.beauty.databinding.ItemPopularBinding
 import com.geektech.beauty.presentation.models.PopularUI
 
-class ServicePopularAdapter :
+class ServicePopularAdapter(private val onButtonClick: () -> Unit) :
     ListAdapter<PopularUI, ServicePopularAdapter.PopularViewHolder>(Companion) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PopularViewHolder {
@@ -33,6 +33,11 @@ class ServicePopularAdapter :
             binding.tvNameSalon.text = it?.nameSalon
             binding.imageServicePopular.loadImageWithGlide(it?.imageBanner)
             binding.tvNumberRatingBar.text = it?.countRating.toString()
+            binding.btnMakeAnAppointment.setOnClickListener {
+                onButtonClick()
+            }
+
+
         }
 
     }

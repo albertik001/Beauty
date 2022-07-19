@@ -8,12 +8,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.geektech.beauty.databinding.ItemButtonServicesBinding
 import com.geektech.beauty.presentation.models.ButtonServicesUI
 
-class ButtonServicesAdapter :
+class ButtonServicesAdapter(private val onCategoryClickListener: () -> Unit) :
     ListAdapter<ButtonServicesUI, ButtonServicesAdapter.ButtonViewHolder>(Companion) {
     inner class ButtonViewHolder(private val binding: ItemButtonServicesBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(it: ButtonServicesUI) {
             binding.btnService.text = it.nameServices
+            binding.root.setOnClickListener {
+                onCategoryClickListener()
+            }
         }
     }
 
