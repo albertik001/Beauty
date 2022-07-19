@@ -11,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/specialist_profile_gradient_background">
+        android:background="@color/whiteSmoke">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
@@ -55,8 +55,8 @@
                 android:layout_width="54dp"
                 android:layout_height="54dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_calendar"
                 app:strokeColor="@color/white"
+
                 app:strokeWidth="4dp" />
         </com.google.android.material.card.MaterialCardView>
 
@@ -72,47 +72,47 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:text="Шыпыргульевна Шыпырнуль Шыпыргуль"
             android:textColor="@color/artisticViolet"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/mcv_specialist_image"
-            tools:text="Шыпыргульевна Шыпырнуль Шыпыргуль" />
+            app:layout_constraintTop_toBottomOf="@id/mcv_specialist_image" />
 
         <TextView
             android:id="@+id/tv_mastery"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="13dp"
+            android:text="Мастер татуажа"
             android:textColor="@color/blueBlack"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_specialist_full_name"
-            tools:text="Мастер татуажа" />
+            app:layout_constraintTop_toBottomOf="@id/tv_specialist_full_name" />
 
         <TextView
             android:id="@+id/tv_specialist_experience"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="11dp"
+            android:text="Стаж 5 лет"
             android:textColor="@color/blueBlack"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_mastery"
-            tools:text="Стаж 5 лет" />
+            app:layout_constraintTop_toBottomOf="@id/tv_mastery" />
 
         <TextView
             android:id="@+id/tv_specialist_rating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:text="5.0"
             android:textColor="@color/linkWater"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@id/tv_mastery"
-            app:layout_constraintTop_toBottomOf="@id/tv_specialist_experience"
-            tools:text="5.0" />
+            app:layout_constraintTop_toBottomOf="@id/tv_specialist_experience" />
 
         <RatingBar
             android:id="@+id/ratingBar_specialist"
