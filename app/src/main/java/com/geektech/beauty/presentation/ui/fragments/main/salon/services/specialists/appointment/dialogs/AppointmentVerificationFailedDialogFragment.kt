@@ -1,4 +1,4 @@
-package com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.appointment
+package com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.appointment.dialogs
 
 import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding

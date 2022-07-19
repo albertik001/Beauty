@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="15dp"
-    tools:context=".presentation.ui.fragments.main.salon.services.specialists.appointment.AppointmentVerificationFailedDialogFragment">
+    tools:context=".presentation.ui.fragments.main.salon.services.specialists.appointment.dialogs.AppointmentVerificationFailedDialogFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
