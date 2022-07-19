@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".presentation.ui.fragments.main.salon.services.specialists.profile.SpecialistProfileFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteSmoke">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            style="@style/baseToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_back_left">
+
+            <TextView
+                style="@style/BaseToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/master" />
+
+            <ImageView
+                android:id="@+id/im_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_share" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcv_specialist_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/whiteSmoke"
+            android:shape="ring"
+
+            app:cardCornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/im_specialist"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:scaleType="centerCrop"
+                app:strokeColor="@color/white"
+
+                app:strokeWidth="4dp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_profile_background_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <TextView
+            android:id="@+id/tv_specialist_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Шыпыргульевна Шыпырнуль Шыпыргуль"
+            android:textColor="@color/artisticViolet"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mcv_specialist_image" />
+
+        <TextView
+            android:id="@+id/tv_mastery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Мастер татуажа"
+            android:textColor="@color/blueBlack"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_specialist_full_name" />
+
+        <TextView
+            android:id="@+id/tv_specialist_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="Стаж 5 лет"
+            android:textColor="@color/blueBlack"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_mastery" />
+
+        <TextView
+            android:id="@+id/tv_specialist_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="5.0"
+            android:textColor="@color/linkWater"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/tv_mastery"
+            app:layout_constraintTop_toBottomOf="@id/tv_specialist_experience" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_specialist"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="6dp"
+            android:numStars="5"
+            android:rating="5.0"
+            android:theme="@style/ratingBar"
+            app:layout_constraintStart_toEndOf="@id/tv_specialist_rating"
+            app:layout_constraintTop_toBottomOf="@id/tv_specialist_experience" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/day_theme_gradient_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@id/gl_profile_background_bottom">
+
+            <TextView
+                android:id="@+id/tv_description_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/description"
+                android:textColor="@color/artisticViolet"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcv_specialist_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_description_title">
+
+                <TextView
+                    android:id="@+id/tv_specialist_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fadeScrollbars="false"
+                    android:fontFamily="@font/roboto_light"
+                    android:isScrollContainer="true"
+                    android:maxEms="23"
+                    android:maxLines="4"
+                    android:minEms="23"
+                    android:scrollbars="vertical"
+                    android:text="Я являюсь топовым мастером-парекмахером в салоне BeStyle. Я очень люблю дело которым занимаюсь, я могу подобрать любой образ по вашему желанию, я всегда понимаю своих клиентов и делаю это с удовольствием! Буду рада видеть вас!DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+                    android:textColor="@color/wildBlueYonder"
+                    android:textSize="15sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tv_service_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/services_categories"
+                android:textColor="@color/artisticViolet"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mcv_specialist_description" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcv_specialist_service_categories"
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_service_categories">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_service_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="13dp"
+                    android:scrollbarThumbHorizontal="@drawable/scrollbar_thumb"
+                    android:scrollbars="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_specialist_service_categories" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:id="@+id/im_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="11dp"
+                android:src="@drawable/ic_calendar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mcv_specialist_service_categories" />
+
+            <TextView
+                android:id="@+id/tv_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/calendar"
+                android:textColor="@color/artisticViolet"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/im_calendar"
+                app:layout_constraintTop_toBottomOf="@id/mcv_specialist_service_categories" />
+
+            <ImageView
+                android:id="@+id/foo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:src="@drawable/ic_foo"
+                app:layout_constraintTop_toBottomOf="@id/tv_calendar" />
+
+            <TextView
+                android:id="@+id/tv_rate_and_leave_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Оставьте оценку и отзыв"
+                android:textColor="@color/artisticViolet"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/foo" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcv_customer_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/whiteSmoke"
+                android:shape="ring"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_rate_and_leave_feedback">
+
+                <ImageView
+                    android:id="@+id/im_customer"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerCrop"
+                    tools:src="@tools:sample/avatars" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <RatingBar
+                android:id="@+id/ratingBar_feedback"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="24dp"
+                android:numStars="5"
+                android:rating="5.0"
+                android:theme="@style/ratingBar"
+                app:layout_constraintStart_toEndOf="@id/mcv_customer_image"
+                app:layout_constraintTop_toBottomOf="@id/tv_rate_and_leave_feedback" />
+
+            <TextView
+                android:id="@+id/tv_share_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/share_feedback"
+                android:textColor="@color/artisticViolet"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mcv_customer_image" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginEnd="28dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="15dp"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:boxCornerRadiusTopStart="15dp"
+                app:boxStrokeColor="@color/pantone"
+                app:boxStrokeWidth="0.5dp"
+                app:boxStrokeWidthFocused="0.5dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_share_feedback">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_give_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="@color/lightPurple"
+                android:text="@string/give_feedback"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:cornerRadius="50dp"
+                app:layout_constraintTop_toBottomOf="@id/til_feedback" />
+
+            <View
+                android:id="@+id/v"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/pantone"
+                app:layout_constraintTop_toBottomOf="@id/btn_give_feedback" />
+
+            <TextView
+                android:id="@+id/tv_customers_feedbacks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/customers_feedback"
+                android:textColor="@color/artisticViolet"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_customers_feedbacks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70dp"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_customers_feedbacks"
+                app:layout_constraintTop_toTopOf="@id/tv_customers_feedbacks"
+                tools:listitem="@layout/item_feedback" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_make_an_appointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/lightPurple"
+                android:fontFamily="@font/quicksand"
+                android:text="@string/make_an_appointment"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_customers_feedbacks" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

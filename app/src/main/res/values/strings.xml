@@ -28,12 +28,23 @@
     <string name="email_must_contain_at_least_8_characters">Электронная почта должна составлять хотя бы 8 символов в длину</string>
     <string name="this_doesnt_look_like_email">Это не похоже на электронную почту</string>
     <string name="beApp_business">BeApp-Business</string>
-<!--    Onboard end-->
+    <!--    Onboard end-->
 
-<!--    Home start-->
+    <!--    Home start-->
     <string name="name_beapp">BeApp</string>
     <string name="hint_search">Поиск</string>
-    <string name="services_categories">Категории</string>
+    <string name="categories">Категории</string>
     <string name="services_popular">Популярные</string>
-<!--    Home end-->
+    <string name="services">Услуги</string>
+    <string name="haircut">Стрижка</string>
+    <string name="specialists">Специалисты</string>
+    <string name="master">Мастер</string>
+    <string name="description">Описание</string>
+    <string name="services_categories">Виды услуг</string>
+    <string name="calendar">Календарь</string>
+    <string name="share_feedback">Поделитесь отзывом</string>
+    <string name="give_feedback">Отправить отзыв</string>
+    <string name="customers_feedback">Отзывы клиентов</string>
+    <string name="make_an_appointment">Записаться</string>
+    <!--    Home end-->
 </resources>
