@@ -52,7 +52,7 @@
     </fragment>
     <dialog
         android:id="@+id/appointmentVerificationDialogFragment"
-        android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.appointment.AppointmentVerificationDialogFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.appointment.AppointmentVerificationSucceededDialogFragment"
         android:label="fragment_appointment_verification_dialog"
-        tools:layout="@layout/fragment_appointment_verification_dialog" />
+        tools:layout="@layout/fragment_appointment_verification_succeeded_dialog" />
 </navigation>
