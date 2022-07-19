@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_day"
     android:fillViewport="true"
     tools:context=".presentation.ui.fragments.main.home.salon.SalonFragment">
 
@@ -88,17 +89,17 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/tv_number_rating_bar"
-            style="@style/baseTextViewServicesSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/lightPurple"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@id/rating_bar_salon"
-            app:layout_constraintEnd_toStartOf="@id/rating_bar_salon"
-            app:layout_constraintTop_toTopOf="@id/rating_bar_salon"
-            tools:text="5.0" />
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_number_rating_bar"-->
+        <!--            style="@style/baseTextViewServicesSmall"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textColor="@color/lightPurple"-->
+        <!--            android:textSize="16sp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@id/rating_bar_salon"-->
+        <!--            app:layout_constraintEnd_toStartOf="@id/rating_bar_salon"-->
+        <!--            app:layout_constraintTop_toTopOf="@id/rating_bar_salon"-->
+        <!--            tools:text="5.0" />-->
 
         <RatingBar
             android:id="@+id/rating_bar_salon"
@@ -287,6 +288,87 @@
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintTop_toBottomOf="@id/tv_our_interior"
             tools:listitem="@layout/item_our_interiors" />
+
+        <TextView
+            android:id="@+id/tv_works_our_masters"
+            style="@style/baseTextViewServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Работы наших мастеров"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recycler_view_interior" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_works_masters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/tv_works_our_masters"
+            tools:listitem="@layout/item_works_our_master" />
+
+        <TextView
+            android:id="@+id/tv_review_rating"
+            style="@style/baseTextViewServicesSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Оставить оценку и отзыв"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recycler_view_works_masters" />
+
+        <ImageView
+            android:id="@+id/image_profile_master"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_review_rating" />
+
+        <RatingBar
+            android:id="@+id/rating_bar_master"
+            style="?android:ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:numStars="5"
+            android:theme="@style/ratingBar"
+            app:layout_constraintBottom_toBottomOf="@id/image_profile_master"
+            app:layout_constraintStart_toEndOf="@id/image_profile_master"
+            app:layout_constraintTop_toTopOf="@id/image_profile_master" />
+
+        <View
+            android:id="@+id/border_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/rating_bar_master" />
+
+        <TextView
+            android:id="@+id/tv_feedback"
+            style="@style/baseTextViewServicesSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Отзывы"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/border_line" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/tv_feedback"
+            tools:listitem="@layout/item_feedback" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
