@@ -35,7 +35,7 @@
         tools:layout="@layout/fragment_specialist_profile" />
     <dialog
         android:id="@+id/appointmentVerificationFailedDialogFragment"
-        android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.appointment.AppointmentVerificationFailedDialogFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.appointment.dialogs.AppointmentVerificationFailedDialogFragment"
         android:label="fragment_appointment_verification_failed_dialog"
         tools:layout="@layout/fragment_appointment_verification_failed_dialog" />
     <fragment
@@ -52,7 +52,7 @@
     </fragment>
     <dialog
         android:id="@+id/appointmentVerificationDialogFragment"
-        android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.appointment.AppointmentVerificationSucceededDialogFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.appointment.dialogs.AppointmentVerificationSucceededDialogFragment"
         android:label="fragment_appointment_verification_dialog"
         tools:layout="@layout/fragment_appointment_verification_succeeded_dialog" />
 </navigation>
