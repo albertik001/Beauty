@@ -4,6 +4,7 @@ import com.geektech.beauty.core.base.BaseViewModel
 import com.geektech.beauty.presentation.models.ButtonServicesUI
 import com.geektech.beauty.presentation.models.PromotionsUI
 import com.geektech.beauty.presentation.models.SalonInformationUI
+import com.geektech.beauty.presentation.models.TopSpecialistUI
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
@@ -39,6 +40,19 @@ class SalonViewModel @Inject constructor() : BaseViewModel() {
             listBtnServices.add(ButtonServicesUI("Ногтевой мастер"))
         }
         return listBtnServices
+    }
+
+    fun getTopSpecialist(): ArrayList<TopSpecialistUI> {
+        val listTopSpecialist = arrayListOf<TopSpecialistUI>()
+        for (i in 1..12) {
+            listTopSpecialist.add(
+                TopSpecialistUI(
+                    "https://icdn.lenta.ru/images/2013/09/20/16/20130920163740742/detail_b8aab4cfd27d9fa1ef3235fa046e7700.jpg",
+                    "Шыпаргуль-мастер инвидуал"
+                )
+            )
+        }
+        return listTopSpecialist
     }
 
 }

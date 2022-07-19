@@ -8,6 +8,7 @@ import com.geektech.beauty.databinding.FragmentSalonBinding
 import com.geektech.beauty.presentation.models.PromotionsUI
 import com.geektech.beauty.presentation.ui.adapters.ButtonServicesAdapter
 import com.geektech.beauty.presentation.ui.adapters.PromotionsPagerAdapter
+import com.geektech.beauty.presentation.ui.adapters.TopSpecialistAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -15,11 +16,18 @@ class SalonFragment : BaseFragment<FragmentSalonBinding, SalonViewModel>(R.layou
     override val binding by viewBinding(FragmentSalonBinding::bind)
     override val viewModel by viewModels<SalonViewModel>()
     private val buttonServicesAdapter = ButtonServicesAdapter()
+    private val topSpecialistAdapter = TopSpecialistAdapter()
 
     override fun initialize() {
         setPromotionsPager(viewModel.getPromotionBanners())
         setSalonInformation()
         setButtonServices()
+        setTopSpecialist()
+    }
+
+    private fun setTopSpecialist() {
+        binding.recyclerViewTopSpecialist.adapter = topSpecialistAdapter
+        topSpecialistAdapter.submitList(viewModel.getTopSpecialist())
     }
 
     private fun setButtonServices() {
