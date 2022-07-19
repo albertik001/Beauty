@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/detailedServicesCategoryFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -11,6 +11,12 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
+        android:id="@+id/salonFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.home.salon.SalonFragment"
+        android:label="fragment_salon"
+        tools:layout="@layout/fragment_salon" />
+
+
         android:id="@+id/detailedServicesCategoryFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.DetailedServicesCategoryFragment"
         android:label="fragment_detailed_services_category"

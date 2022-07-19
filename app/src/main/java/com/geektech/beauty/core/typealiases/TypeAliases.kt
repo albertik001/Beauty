@@ -1,4 +1,4 @@
-package com.timplifier.boilerplate.core.typealiases
+package com.geektech.beauty.core.typealiases
 
 typealias NotAnActualActivity = Any
 typealias NotAnActualCallbacks = Any
