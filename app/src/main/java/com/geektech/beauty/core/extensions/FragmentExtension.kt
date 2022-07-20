@@ -97,5 +97,3 @@ fun Fragment.overrideOnBackPressed(actionWhenBackButtonPressed: () -> Unit) {
 
         })
 }
-
-

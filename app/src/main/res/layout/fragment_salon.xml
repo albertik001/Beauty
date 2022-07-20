@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_day"
+    android:fillViewport="true"
+    tools:context=".presentation.ui.fragments.main.home.salon.SalonFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/baseToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_burger_menu">
+
+            <TextView
+                style="@style/BaseToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BeStyle" />
+
+            <ImageView
+                android:id="@+id/menu_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_share" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/tv_hello_salon"
+            style="@style/baseTextViewServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:maxEms="11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            tools:text="Рады Вас приветствовать  в салоне BeStyle! " />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/salon_promotions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_hello_salon">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <include layout="@layout/item_place_holder_promotion" />
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager_home_promotions"
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                android:id="@+id/worm_dots_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:dotsColor="@color/artisticViolet"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="8dp"
+                app:dotsSpacing="4dp"
+                app:dotsStrokeColor="@color/lightPurple"
+                app:dotsStrokeWidth="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_number_rating_bar"-->
+        <!--            style="@style/baseTextViewServicesSmall"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textColor="@color/lightPurple"-->
+        <!--            android:textSize="16sp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@id/rating_bar_salon"-->
+        <!--            app:layout_constraintEnd_toStartOf="@id/rating_bar_salon"-->
+        <!--            app:layout_constraintTop_toTopOf="@id/rating_bar_salon"-->
+        <!--            tools:text="5.0" />-->
+
+        <RatingBar
+            android:id="@+id/rating_bar_salon"
+            style="?android:ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:numStars="5"
+            android:rating="5.0"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:theme="@style/ratingBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/salon_promotions" />
+
+        <ImageView
+            android:id="@+id/icon_time_work_salon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/ic_clock"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rating_bar_salon" />
+
+        <TextView
+            android:id="@+id/tv_work_time_salon"
+            style="@style/baseTextViewServicesSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/icon_time_work_salon"
+            app:layout_constraintStart_toEndOf="@id/icon_time_work_salon"
+            app:layout_constraintTop_toTopOf="@id/icon_time_work_salon"
+            tools:text="8:00-20:00" />
+
+        <ImageView
+            android:id="@+id/icon_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/ic_calendar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/icon_time_work_salon" />
+
+        <TextView
+            android:id="@+id/tv_operation_mode"
+            style="@style/baseTextViewServicesSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/icon_calendar"
+            app:layout_constraintStart_toEndOf="@id/icon_calendar"
+            app:layout_constraintTop_toTopOf="@id/icon_calendar"
+            tools:text="24/7, без выходных" />
+
+        <ImageView
+            android:id="@+id/icon_locations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/ic_locations_gps"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/icon_calendar" />
+
+        <TextView
+            android:id="@+id/tv_location_address"
+            style="@style/baseTextViewServicesSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/icon_locations"
+            app:layout_constraintStart_toEndOf="@id/icon_locations"
+            app:layout_constraintTop_toTopOf="@id/icon_locations"
+            tools:text="ул. Советская 152/1" />
+
+        <ImageView
+            android:id="@+id/icon_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/ic_phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/icon_locations" />
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            style="@style/baseTextViewServicesSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/icon_phone"
+            app:layout_constraintStart_toEndOf="@id/icon_phone"
+            app:layout_constraintTop_toTopOf="@id/icon_phone"
+            tools:text="+996 555 171819" />
+
+        <ImageView
+            android:id="@+id/icon_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/ic_mail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/icon_phone" />
+
+        <TextView
+            android:id="@+id/tv_address_mail"
+            style="@style/baseTextViewServicesSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/icon_mail"
+            app:layout_constraintStart_toEndOf="@id/icon_mail"
+            app:layout_constraintTop_toTopOf="@id/icon_mail"
+            tools:text="bestyle_salon@gmail.com" />
+
+        <TextView
+            android:id="@+id/tv_service"
+            style="@style/baseTextViewServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Услуги"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_address_mail" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_button_services"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/tv_service"
+            tools:listitem="@layout/item_button_services" />
+
+        <TextView
+            android:id="@+id/tv_top_specialist"
+            style="@style/baseTextViewServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:text="Топовые специалисты"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recycler_view_button_services" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_top_specialist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/tv_top_specialist"
+            app:spanCount="2"
+            tools:listitem="@layout/item_top_specialist" />
+
+        <TextView
+            android:id="@+id/tv_our_interior"
+            style="@style/baseTextViewServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:text="Наш интерьер"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recycler_view_top_specialist" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_interior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/tv_our_interior"
+            tools:listitem="@layout/item_our_interiors" />
+
+        <TextView
+            android:id="@+id/tv_works_our_masters"
+            style="@style/baseTextViewServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Работы наших мастеров"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recycler_view_interior" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_works_masters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/tv_works_our_masters"
+            tools:listitem="@layout/item_works_our_master" />
+
+        <TextView
+            android:id="@+id/tv_review_rating"
+            style="@style/baseTextViewServicesSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Оставить оценку и отзыв"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recycler_view_works_masters" />
+
+        <ImageView
+            android:id="@+id/image_profile_master"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_review_rating" />
+
+        <RatingBar
+            android:id="@+id/rating_bar_master"
+            style="?android:ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:numStars="5"
+            android:theme="@style/ratingBar"
+            app:layout_constraintBottom_toBottomOf="@id/image_profile_master"
+            app:layout_constraintStart_toEndOf="@id/image_profile_master"
+            app:layout_constraintTop_toTopOf="@id/image_profile_master" />
+
+        <View
+            android:id="@+id/border_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/rating_bar_master" />
+
+        <TextView
+            android:id="@+id/tv_feedback"
+            style="@style/baseTextViewServicesSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Отзывы"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/border_line" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/tv_feedback"
+            tools:listitem="@layout/item_feedback" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

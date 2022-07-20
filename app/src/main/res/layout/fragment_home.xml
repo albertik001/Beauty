@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/services_categories"
+        android:text="@string/categories"
         app:layout_constraintStart_toStartOf="@id/search_view"
         app:layout_constraintTop_toBottomOf="@id/search_view" />
 
@@ -69,12 +69,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_popular"
-        tools:listitem="@layout/item_popular"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_service_popular" />
+        app:layout_constraintTop_toBottomOf="@id/tv_service_popular"
+        tools:listitem="@layout/item_popular" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
