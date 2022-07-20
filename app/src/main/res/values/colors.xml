@@ -24,5 +24,8 @@
     <color name="starColor">#F7DE1C</color>
     <color name="unSelectedStarColor">#979797</color>
     <color name="lightPurple">#917AE5</color>
-
+    <color name="whiteSmoke">#F6F6F6</color>
+    <color name="linkWater">#D2D4D6</color>
+    <color name="silver">#BDBDBD</color>
+    <color name="pantone">#CDD0DB</color>
 </resources>

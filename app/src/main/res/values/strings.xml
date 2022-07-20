@@ -28,12 +28,34 @@
     <string name="email_must_contain_at_least_8_characters">Электронная почта должна составлять хотя бы 8 символов в длину</string>
     <string name="this_doesnt_look_like_email">Это не похоже на электронную почту</string>
     <string name="beApp_business">BeApp-Business</string>
-<!--    Onboard end-->
+    <!--    Onboard end-->
 
-<!--    Home start-->
+    <!--    Home start-->
     <string name="name_beapp">BeApp</string>
     <string name="hint_search">Поиск</string>
-    <string name="services_categories">Категории</string>
+    <string name="categories">Категории</string>
     <string name="services_popular">Популярные</string>
-<!--    Home end-->
+    <string name="services">Услуги</string>
+    <string name="haircut">Стрижка</string>
+    <string name="specialists">Специалисты</string>
+    <string name="master">Мастер</string>
+    <string name="masterWithColon">Мастер:</string>
+    <string name="description">Описание</string>
+    <string name="services_categories">Виды услуг</string>
+    <string name="calendar">Календарь</string>
+    <string name="share_feedback">Поделитесь отзывом</string>
+    <string name="give_feedback">Отправить отзыв</string>
+    <string name="customers_feedback">Отзывы клиентов</string>
+    <string name="make_an_appointment">Записаться</string>
+    <string name="appointment_verification">Подтверждение записи</string>
+    <string name="serviceWithColon">Услуга:</string>
+    <string name="service_duration_with_color">Длительность:</string>
+    <string name="service_cost_with_colon">Стоимость:</string>
+    <string name="verify_appointment">Подтвердить запись</string>
+    <string name="your_appointment_has_been_verified">Ваша запись прошла успешно</string>
+    <string name="ok">Ок</string>
+    <string name="check_the_appointment">Просмотреть запись</string>
+    <string name="the_appointment_verification_failed">Запись не прошла успешно</string>
+    <string name="back_to_appointments">Вернуться к записям</string>
+    <!--    Home end-->
 </resources>
