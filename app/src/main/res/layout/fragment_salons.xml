@@ -32,7 +32,5 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="0dp"
         tools:listitem="@layout/item_salons" />
 </androidx.constraintlayout.widget.ConstraintLayout>

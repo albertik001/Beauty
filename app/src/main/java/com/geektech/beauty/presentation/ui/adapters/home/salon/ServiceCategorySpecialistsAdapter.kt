@@ -58,8 +58,6 @@ class ServiceCategorySpecialistsAdapter(val onItemClick: (position: Int) -> Unit
             oldItem: ServiceCategorySpecialistUI,
             newItem: ServiceCategorySpecialistUI
         ) = oldItem == newItem
-
-
     }
 
 
