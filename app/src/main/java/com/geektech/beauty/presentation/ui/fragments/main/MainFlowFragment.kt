@@ -1,5 +1,6 @@
 package com.geektech.beauty.presentation.ui.fragments.main
 
+import android.view.WindowManager
 import androidx.navigation.NavController
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.NavigationUI.setupWithNavController
@@ -32,6 +33,22 @@ class MainFlowFragment :
             }
 
         }
+
+    }
+
+    private fun setTransparentStatusBarDependingOnTheDestination(navController: NavController) {
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+
+
+        }
+    }
+
+
+    private fun setTransparentStatusBarColor() {
+        requireActivity().window.setFlags(
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        );
 
     }
 

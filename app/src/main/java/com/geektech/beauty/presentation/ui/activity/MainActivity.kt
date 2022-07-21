@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.NavigationUI
-import androidx.navigation.ui.setupActionBarWithNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.geektech.beauty.R
 import com.geektech.beauty.data.local.preferences.AuthenticationPreferencesManager
@@ -29,7 +27,6 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     }
 
 
-
     private fun defineStartDestination() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment_container) as NavHostFragment
@@ -46,4 +43,5 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         }
         navController.graph = navGraph
     }
+
 }
