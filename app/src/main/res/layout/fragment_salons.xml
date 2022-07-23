@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_day"
-    tools:context=".presentation.ui.fragments.main.home.HomeFragment">
+    tools:context=".presentation.ui.fragments.main.salons.SalonsFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -13,14 +13,20 @@
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/ic_arrow_left">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             style="@style/BaseToolbarTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/salons" />
+
+        <ImageView
+            android:id="@+id/menu_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_arrow_left" />
 
     </androidx.appcompat.widget.Toolbar>
 

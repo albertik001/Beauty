@@ -5,12 +5,14 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.provider.MediaStore
+import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.result.ActivityResultLauncher
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.viewbinding.ViewBinding
 import com.google.android.material.snackbar.Snackbar
 
 fun Fragment.showShortDurationSnackbar(text: CharSequence) {
@@ -86,6 +88,16 @@ fun Fragment.checkWhetherSoftKeyboardIsOpenedOrNot(): Boolean {
     return inputMethodManager.isAcceptingText
 
 }
+
+typealias Bind<T> = (View) -> T
+
+inline fun <reified Binding : ViewBinding> Fragment.getBinding(layoutId: Int, bind: Bind<Binding>) =
+    bind(
+        layoutInflater.inflate(
+            layoutId,
+            null
+        )
+    )
 
 fun Fragment.overrideOnBackPressed(actionWhenBackButtonPressed: () -> Unit) {
     activity?.onBackPressedDispatcher?.addCallback(
