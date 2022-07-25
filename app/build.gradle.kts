@@ -53,6 +53,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":feature-business"))
     // UI Components
     implementation(libs.bundles.uiComponents)
 
@@ -69,17 +70,7 @@ dependencies {
     // Navigation
     implementation(libs.bundles.navigation)
 
-    // OkHttp
-    implementation(libs.bundles.okHttp)
-
-    // Retrofit
-    implementation(libs.bundles.retrofit)
-
-    // Paging 3
-    implementation(libs.paging.paging)
-
     // Room
-    implementation(libs.bundles.room)
     kapt(libs.room.compiler)
 
     // Hilt
