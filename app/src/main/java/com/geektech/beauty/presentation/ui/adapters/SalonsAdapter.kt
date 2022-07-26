@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.geektech.beauty.core.extensions.loadImageWithGlide
 import com.geektech.beauty.databinding.ItemSalonsBinding
 import com.geektech.beauty.presentation.models.SalonsUI
-import com.geektech.beauty.presentation.ui.adapters.SalonsAdapter.*
+import com.geektech.beauty.presentation.ui.adapters.SalonsAdapter.SalonsViewHolder
 
 class SalonsAdapter : ListAdapter<SalonsUI, SalonsViewHolder>(Companion) {
 
