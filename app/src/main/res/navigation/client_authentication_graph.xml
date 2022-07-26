@@ -5,7 +5,10 @@
     android:id="@+id/client_authentication_graph"
     tools:ignore="InvalidNavigation">
 
-
+    <action
+        android:id="@+id/action_global_to_clientMainFlowFragment"
+        app:destination="@id/clientMainFlowFragment"
+        app:popUpTo="@id/client_authentication_graph" />
     <fragment
         android:id="@+id/onboardFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.authentication.onboard.OnboardFragment"
@@ -13,7 +16,8 @@
         tools:layout="@layout/fragment_business_onboard">
         <action
             android:id="@+id/action_onboardFragment_to_signUpFragment"
-            app:destination="@id/signUpFragment" />
+            app:destination="@id/signUpFragment"
+            app:popUpTo="@id/client_authentication_graph" />
     </fragment>
     <fragment
         android:id="@+id/clientMainFlowFragment"
@@ -34,9 +38,5 @@
         android:id="@+id/signUpFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.authentication.signUp.SignUpFragment"
         android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up">
-        <action
-            android:id="@+id/action_signUpFragment_to_clientMainFlowFragment"
-            app:destination="@id/clientMainFlowFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_sign_up" />
 </navigation>

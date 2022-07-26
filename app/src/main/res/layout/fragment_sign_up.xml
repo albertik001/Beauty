@@ -42,7 +42,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_name_and_last_name"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/inter_medium"
             android:hint="@string/first_name_second_name"
             android:maxLines="1"

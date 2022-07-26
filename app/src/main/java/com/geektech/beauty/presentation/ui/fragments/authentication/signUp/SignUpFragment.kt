@@ -52,7 +52,7 @@ class SignUpFragment :
                             getString(R.string.this_doesnt_look_like_email)
                     else -> {
                         authenticationPreferencesManager.isClientAuthenticated = true
-                        findNavController().navigateSafely(R.id.action_signUpFragment_to_clientMainFlowFragment)
+                        findNavController().navigateSafely(R.id.action_global_to_clientMainFlowFragment)
                     }
                 }
 

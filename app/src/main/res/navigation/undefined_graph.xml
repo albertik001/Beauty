@@ -27,12 +27,5 @@
         android:id="@+id/chooseClientOrSalonSideFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.undefined.sideSelection.ChooseClientOrSalonSideFragment"
         android:label="fragment_choose_client_or_salon_side"
-        tools:layout="@layout/fragment_choose_client_or_salon_side">
-        <action
-            android:id="@+id/action_chooseClientOrSalonSideFragment_to_clientAuthenticationFlowFragment"
-            app:destination="@id/clientAuthenticationFlowFragment" />
-        <action
-            android:id="@+id/action_chooseClientOrSalonSideFragment_to_businessAuthenticationFlowFragment"
-            app:destination="@id/businessAuthenticationFlowFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_choose_client_or_salon_side" />
 </navigation>
