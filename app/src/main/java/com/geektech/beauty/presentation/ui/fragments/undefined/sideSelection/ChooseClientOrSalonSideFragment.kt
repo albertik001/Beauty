@@ -35,14 +35,14 @@ class ChooseClientOrSalonSideFragment :
     private fun navigateToClientSideOnboard() {
         binding.btnChooseBeAppClient.setOnClickListener {
             authenticationPreferencesManager.userRole = CLIENT_ROLE_KEY
-            findNavController().navigateSafely(R.id.action_chooseClientOrSalonSideFragment_to_clientAuthenticationFlowFragment)
+            findNavController().navigateSafely(R.id.action_global_to_clientAuthenticationFlowFragment)
         }
     }
 
     private fun navigateToBusinessSideOnboard() {
         binding.btnChooseBeAppBusiness.setOnClickListener {
             authenticationPreferencesManager.userRole = SALON_OWNER_ROLE_KEY
-            findNavController().navigateSafely(R.id.action_chooseClientOrSalonSideFragment_to_businessAuthenticationFlowFragment)
+            findNavController().navigateSafely(R.id.action_global_to_businessAuthenticationFlowFragment)
         }
     }
 }
