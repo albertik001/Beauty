@@ -10,6 +10,8 @@ import androidx.activity.OnBackPressedCallback
 import androidx.activity.result.ActivityResultLauncher
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsControllerCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
 
@@ -96,4 +98,19 @@ fun Fragment.overrideOnBackPressed(actionWhenBackButtonPressed: () -> Unit) {
             }
 
         })
+}
+
+fun Fragment.setStatusBarColor(color: Int) {
+    WindowCompat.setDecorFitsSystemWindows(requireActivity().window, true)
+    requireActivity().window.statusBarColor = ContextCompat.getColor(requireActivity(), color)
+
+}
+
+fun Fragment.setStatusBarLightAppearance(isAppearanceLightStatusBars: Boolean) {
+    view?.let {
+        WindowInsetsControllerCompat(
+            requireActivity().window, it
+        ).isAppearanceLightStatusBars = isAppearanceLightStatusBars
+    }
+
 }
