@@ -5,9 +5,10 @@ import androidx.fragment.app.viewModels
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.geektech.beauty.R
 import com.geektech.beauty.core.base.BaseFragment
+import com.geektech.beauty.core.data.local.preferences.AuthenticationPreferencesManager
 import com.geektech.beauty.core.extensions.mainNavController
 import com.geektech.beauty.core.extensions.navigateSafely
-import com.geektech.beauty.data.local.preferences.AuthenticationPreferencesManager
+import com.geektech.beauty.core.extensions.setStatusBarColor
 import com.geektech.beauty.databinding.FragmentSignUpBinding
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
@@ -20,6 +21,10 @@ class SignUpFragment :
     lateinit var authenticationPreferencesManager: AuthenticationPreferencesManager
     override val binding by viewBinding(FragmentSignUpBinding::bind)
     override val viewModel by viewModels<SignUpViewModel>()
+    override fun constructViews() {
+        setStatusBarColor(R.color.snow)
+    }
+
     override fun performListeners() {
         signInIntoAccount()
     }
@@ -46,8 +51,8 @@ class SignUpFragment :
                         etEmail.error =
                             getString(R.string.this_doesnt_look_like_email)
                     else -> {
-                        authenticationPreferencesManager.isAuthenticated = true
-                        mainNavController().navigateSafely(R.id.action_global_to_mainFlowFragment)
+                        authenticationPreferencesManager.isClientAuthenticated = true
+                        mainNavController(R.id.nav_host_fragment_container).navigateSafely(R.id.action_global_to_clientMainFlowFragment)
                     }
                 }
 
