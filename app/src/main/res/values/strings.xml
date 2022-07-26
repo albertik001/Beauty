@@ -29,7 +29,10 @@
     <string name="this_doesnt_look_like_email">Это не похоже на электронную почту</string>
     <string name="beApp_business">BeApp-Business</string>
     <!--    Onboard end-->
-
+    <!--    NavDrawer start-->
+    <string name="language">Язык</string>
+    <string name="share_an_app">Поделиться приложением</string>
+    <string name="service_support">Служба поддержки</string>
     <!--    Home start-->
     <string name="name_beapp">BeApp</string>
     <string name="hint_search">Поиск</string>
@@ -65,7 +68,6 @@
     <string name="edit_profile">Редактировать профиль</string>
     <string name="share">Поделиться</string>
     <string name="off_notifications">Отключить уведомления</string>
-    <string name="language">Язык</string>
     <string name="my_appointments">Мои записи</string>
     <!--    Home end-->
 </resources>

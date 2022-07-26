@@ -32,7 +32,8 @@ class EditProfileFragment :
             ) {
                 findNavController().navigateUp()
             } else {
-                Toast.makeText(requireContext(), "Field's can't be blank", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Field's can't be blank", Toast.LENGTH_SHORT)
+                    .show()
             }
         }
     }

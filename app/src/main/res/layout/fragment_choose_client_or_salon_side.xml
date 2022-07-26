@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cendreBlue"
-    tools:context=".presentation.ui.fragments.authentication.sideSelection.ChooseClientOrSalonSideFragment">
+    tools:context=".presentation.ui.fragments.undefined.sideSelection.ChooseClientOrSalonSideFragment">
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -55,7 +55,7 @@
         app:layout_constraintTop_toTopOf="@id/gl_btn_customer_client" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_select_beApp_business"
+        android:id="@+id/btn_choose_beApp_business"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="33dp"

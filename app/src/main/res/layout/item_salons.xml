@@ -9,8 +9,8 @@
         android:id="@+id/card_view_salons_salon"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:layout_marginTop="24dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
         app:cardCornerRadius="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -18,11 +18,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            tools:text="Лого"
-            android:textColor="@color/unSelectedStarColor"
             android:layout_gravity="center"
-            />
+            android:textColor="@color/unSelectedStarColor"
+            android:textSize="20sp"
+            tools:text="Лого" />
 
         <ImageView
             android:id="@+id/image_salon_logo"
@@ -37,22 +36,21 @@
         style="@style/baseTextViewServices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="@string/name_beapp"
         app:layout_constraintBottom_toTopOf="@+id/tv_number_rating_bar"
-        app:layout_constraintTop_toTopOf="@+id/card_view_salons_salon"
-        android:layout_marginStart="16dp"
         app:layout_constraintStart_toEndOf="@+id/card_view_salons_salon"
-        />
+        app:layout_constraintTop_toTopOf="@+id/card_view_salons_salon" />
 
     <TextView
         android:id="@+id/tv_number_rating_bar"
         style="@style/baseTextViewServicesSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/tv_salon_name"
         android:layout_marginStart="16dp"
-        app:layout_constraintStart_toEndOf="@id/card_view_salons_salon"
         app:layout_constraintBottom_toBottomOf="@id/card_view_salons_salon"
+        app:layout_constraintStart_toEndOf="@id/card_view_salons_salon"
+        app:layout_constraintTop_toBottomOf="@+id/tv_salon_name"
         tools:text="5.0" />
 
     <RatingBar
@@ -70,13 +68,13 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvWorks"
-        app:layout_constraintTop_toBottomOf="@id/card_view_salons_salon"
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        tools:listitem="@layout/item_works"/>
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/card_view_salons_salon"
+        tools:listitem="@layout/item_works" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

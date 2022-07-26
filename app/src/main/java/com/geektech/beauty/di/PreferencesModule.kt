@@ -3,7 +3,7 @@ package com.geektech.beauty.di
 import android.content.Context
 import android.content.SharedPreferences
 import com.geektech.beauty.common.Constants.PREFERENCES_NAME_KEY
-import com.geektech.beauty.data.local.preferences.AuthenticationPreferencesManager
+import com.geektech.beauty.core.data.local.preferences.AuthenticationPreferencesManager
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

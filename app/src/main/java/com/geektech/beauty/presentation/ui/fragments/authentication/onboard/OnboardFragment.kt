@@ -5,8 +5,8 @@ import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.geektech.beauty.R
 import com.geektech.beauty.core.base.BaseFragment
+import com.geektech.beauty.core.data.local.preferences.AuthenticationPreferencesManager
 import com.geektech.beauty.core.extensions.navigateSafely
-import com.geektech.beauty.data.local.preferences.AuthenticationPreferencesManager
 import com.geektech.beauty.databinding.FragmentOnboardBinding
 import com.geektech.beauty.presentation.ui.adapters.OnboardViewPagerAdapter
 import dagger.hilt.android.AndroidEntryPoint
@@ -33,7 +33,7 @@ class OnboardFragment :
     }
 
     private fun navigateToSignUpIfOnboardHasBeenSeen() {
-        if (authenticationPreferencesManager.hasOnboardBeenSeen)
+        if (authenticationPreferencesManager.hasClientOnboardBeenSeen)
             findNavController().navigateSafely(R.id.action_onboardFragment_to_signUpFragment)
     }
 
@@ -46,7 +46,7 @@ class OnboardFragment :
 
     private fun skipOnboard() {
         binding.tvSkipOnboard.setOnClickListener {
-            authenticationPreferencesManager.hasOnboardBeenSeen = true
+            authenticationPreferencesManager.hasClientOnboardBeenSeen = true
             findNavController().navigateSafely(R.id.action_onboardFragment_to_signUpFragment)
         }
     }
@@ -60,7 +60,7 @@ class OnboardFragment :
                         true
                     )
                     else -> {
-                        authenticationPreferencesManager.hasOnboardBeenSeen = true
+                        authenticationPreferencesManager.hasClientOnboardBeenSeen = true
                         findNavController().navigateSafely(R.id.action_onboardFragment_to_signUpFragment)
                     }
 

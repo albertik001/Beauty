@@ -1,6 +1,5 @@
 package com.geektech.beauty.presentation.ui.fragments.main.profile
 
-import android.view.LayoutInflater
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding

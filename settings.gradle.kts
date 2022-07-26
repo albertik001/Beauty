@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Beauty"
-include(":app")
+include(":app", ":common", ":core", ":feature-business")
 enableFeaturePreview("VERSION_CATALOGS")

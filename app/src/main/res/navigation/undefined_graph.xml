@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/undefined_graph"
+    tools:ignore="InvalidNavigation">
+
+    <action
+        android:id="@+id/action_global_to_businessAuthenticationFlowFragment"
+        app:destination="@id/businessAuthenticationFlowFragment"
+        app:popUpTo="@id/undefined_graph" />
+    <action
+        android:id="@+id/action_global_to_clientAuthenticationFlowFragment"
+        app:destination="@id/clientAuthenticationFlowFragment"
+        app:popUpTo="@id/undefined_graph" />
+    <fragment
+        android:id="@+id/clientAuthenticationFlowFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.authentication.ClientAuthenticationFlowFragment"
+        android:label="fragment_client_authentication_flow"
+        tools:layout="@layout/fragment_client_authentication_flow" />
+    <fragment
+        android:id="@+id/businessAuthenticationFlowFragment"
+        android:name="com.geektech.beauty.business.presentation.ui.fragments.authentication.BusinessAuthenticationFlowFragment"
+        android:label="BusinessAuthenticationFlowFragment"
+        tools:layout="@layout/fragment_business_authentication_flow" />
+    <fragment
+        android:id="@+id/chooseClientOrSalonSideFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.undefined.sideSelection.ChooseClientOrSalonSideFragment"
+        android:label="fragment_choose_client_or_salon_side"
+        tools:layout="@layout/fragment_choose_client_or_salon_side">
+        <action
+            android:id="@+id/action_chooseClientOrSalonSideFragment_to_clientAuthenticationFlowFragment"
+            app:destination="@id/clientAuthenticationFlowFragment" />
+        <action
+            android:id="@+id/action_chooseClientOrSalonSideFragment_to_businessAuthenticationFlowFragment"
+            app:destination="@id/businessAuthenticationFlowFragment" />
+    </fragment>
+</navigation>

@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.geektech.beauty.core.extensions.loadImageWithGlide
 import com.geektech.beauty.databinding.ItemWorksBinding
 
-class WorksAdapter: RecyclerView.Adapter<WorksAdapter.WorksViewHolder>() {
+class WorksAdapter : RecyclerView.Adapter<WorksAdapter.WorksViewHolder>() {
 
     var list = ArrayList<String>()
 

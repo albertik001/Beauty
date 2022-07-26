@@ -18,10 +18,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            tools:text="фото\nин-ра,\nработ"
             android:textAlignment="center"
             android:textColor="@color/unSelectedStarColor"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            tools:text="фото\nин-ра,\nработ" />
 
         <ImageView
             android:id="@+id/image_salon"
