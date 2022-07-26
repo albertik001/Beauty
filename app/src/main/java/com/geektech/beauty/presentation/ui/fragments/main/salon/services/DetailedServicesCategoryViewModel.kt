@@ -11,6 +11,7 @@ import javax.inject.Inject
 class DetailedServicesCategoryViewModel @Inject constructor() : BaseViewModel() {
     private val _detailedServicesState = MutableStateFlow<List<DetailedCategoryUI>>(emptyList())
     val detailedServicesState = _detailedServicesState.asStateFlow()
+
     private fun fetchDetailedServices() {
         val list = listOf(
             DetailedCategoryUI(

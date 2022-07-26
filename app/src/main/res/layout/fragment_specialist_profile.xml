@@ -220,7 +220,7 @@
                 app:layout_constraintTop_toBottomOf="@id/mcv_specialist_service_categories" />
 
             <TextView
-                android:id="@+id/tv_calendar"
+                android:id="@+id/tv_operation_mode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -238,7 +238,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="13dp"
                 android:src="@drawable/ic_foo"
-                app:layout_constraintTop_toBottomOf="@id/tv_calendar" />
+                app:layout_constraintTop_toBottomOf="@id/tv_operation_mode" />
 
             <TextView
                 android:id="@+id/tv_rate_and_leave_feedback"

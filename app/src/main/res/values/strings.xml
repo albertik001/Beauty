@@ -57,5 +57,6 @@
     <string name="check_the_appointment">Просмотреть запись</string>
     <string name="the_appointment_verification_failed">Запись не прошла успешно</string>
     <string name="back_to_appointments">Вернуться к записям</string>
+    <string name="my_appointments">Мои записи</string>
     <!--    Home end-->
 </resources>

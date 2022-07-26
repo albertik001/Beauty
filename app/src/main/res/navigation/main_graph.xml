@@ -95,4 +95,12 @@
         android:name="com.geektech.beauty.presentation.ui.fragments.main.salons.SalonsFragment"
         android:label="SalonsFragment"
         tools:layout="@layout/fragment_salons" />
+
+    <fragment
+        android:id="@+id/appointmentsFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.appointment.AppointmentsFragment"
+        android:label="fragment_appointments"
+        tools:layout="@layout/fragment_appointments" />
+
+
 </navigation>

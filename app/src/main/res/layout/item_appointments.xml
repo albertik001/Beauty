@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_be_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/inter"
+        android:text="BeStyle"
+        android:textColor="@color/artisticViolet"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_be_style">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@color/artisticViolet" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/ic_map"
+        android:layout_width="18dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ic_locations_gps"
+        app:layout_constraintStart_toEndOf="@id/card_view"
+        app:layout_constraintTop_toTopOf="@id/tv_be_style" />
+
+    <TextView
+        android:id="@+id/tv_location_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="ул. Советская 152/1"
+        android:textColor="@color/artisticViolet"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:drawableLeftCompat="@drawable/ic_locations_gps"
+        app:layout_constraintStart_toStartOf="@id/ic_map"
+        app:layout_constraintTop_toTopOf="@id/ic_map" />
+
+    <ImageView
+        android:id="@+id/ic_clock"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/ic_clock"
+        app:layout_constraintStart_toStartOf="@id/ic_map"
+        app:layout_constraintTop_toBottomOf="@id/ic_map" />
+
+    <TextView
+        android:id="@+id/tv_time_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="8:00-20:00"
+        android:textColor="@color/artisticViolet"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/ic_clock"
+        app:layout_constraintTop_toBottomOf="@id/tv_location_address"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/ic_phone"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintStart_toStartOf="@id/ic_clock"
+        app:layout_constraintTop_toBottomOf="@id/ic_clock" />
+
+    <TextView
+        android:id="@+id/tv_phone_numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="+996 555 171819"
+        android:textColor="@color/artisticViolet"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/ic_phone"
+        app:layout_constraintTop_toBottomOf="@id/tv_time_work"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/ic_calendar"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/ic_calendar"
+        app:layout_constraintStart_toStartOf="@id/ic_phone"
+        app:layout_constraintTop_toBottomOf="@id/ic_phone" />
+
+    <TextView
+        android:id="@+id/tv_operation_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:text="24/7, без выходных"
+        android:textColor="@color/artisticViolet"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/ic_calendar"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone_numbers"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/ic_mail"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/ic_mail"
+        app:layout_constraintStart_toStartOf="@id/ic_calendar"
+        app:layout_constraintTop_toBottomOf="@id/ic_calendar" />
+
+    <TextView
+        android:id="@+id/tv_address_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="bestyle_salon@gmail.com"
+        android:textColor="@color/artisticViolet"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/ic_mail"
+        app:layout_constraintTop_toBottomOf="@id/tv_operation_mode"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_data_of_recording"
+        style="@style/TextViewSize15"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"
+        android:text="Дата записи:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_view"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_date_of_appointments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:text="1 марта"
+        android:textColor="@color/artisticViolet"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/tv_data_of_recording"
+        app:layout_constraintTop_toTopOf="@id/tv_data_of_recording" />
+
+    <TextView
+        android:id="@+id/tv_time_to_record"
+        style="@style/TextViewSize15"
+        android:layout_marginTop="15dp"
+        android:text="Время записи:"
+        app:layout_constraintStart_toStartOf="@id/tv_data_of_recording"
+        app:layout_constraintTop_toBottomOf="@id/tv_data_of_recording" />
+
+    <TextView
+        android:id="@+id/tv_time_appointments"
+        style="@style/TextViewSize15"
+        android:layout_marginTop="15dp"
+        android:text="Утро 9:45"
+        app:layout_constraintStart_toStartOf="@id/tv_date_of_appointments"
+        app:layout_constraintTop_toBottomOf="@id/tv_date_of_appointments" />
+
+    <TextView
+        android:id="@+id/tv_service"
+        style="@style/TextViewSize15"
+        android:layout_marginTop="15dp"
+        android:text="Услуга:"
+        app:layout_constraintStart_toStartOf="@id/tv_time_to_record"
+        app:layout_constraintTop_toBottomOf="@id/tv_time_to_record" />
+
+    <TextView
+        android:id="@+id/tv_service_content"
+        style="@style/TextViewSize15"
+        android:layout_marginTop="15dp"
+        android:text="Стрижка"
+        app:layout_constraintStart_toStartOf="@id/tv_time_appointments"
+        app:layout_constraintTop_toBottomOf="@id/tv_time_appointments" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        style="@style/TextViewSize15"
+        android:layout_marginTop="15dp"
+        android:text="Длительность:"
+        app:layout_constraintStart_toStartOf="@id/tv_service"
+        app:layout_constraintTop_toBottomOf="@id/tv_service" />
+
+    <TextView
+        android:id="@+id/tv_duration_content"
+        style="@style/TextViewSize15"
+        android:text="30 мин"
+        app:layout_constraintStart_toStartOf="@id/tv_service_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_service_content" />
+
+    <TextView
+        android:id="@+id/tv_master"
+        style="@style/TextViewSize15"
+        android:layout_marginTop="15dp"
+        android:text="Мастер:"
+        app:layout_constraintStart_toStartOf="@id/tv_duration"
+        app:layout_constraintTop_toBottomOf="@id/tv_duration" />
+
+    <TextView
+        android:id="@+id/tv_master_content"
+        style="@style/TextViewSize15"
+        android:text="Айгул"
+        app:layout_constraintStart_toStartOf="@id/tv_duration_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_duration_content" />
+
+    <TextView
+        android:id="@+id/tv_service_cost"
+        style="@style/TextViewSize15"
+        android:text="Стоимость услуги:"
+        app:layout_constraintStart_toStartOf="@id/tv_master"
+        app:layout_constraintTop_toBottomOf="@id/tv_master" />
+
+    <TextView
+        android:id="@+id/tv_service_cost_content"
+        style="@style/TextViewSize15"
+        android:text="500 сом"
+        app:layout_constraintStart_toStartOf="@id/tv_master_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_master_content" />
+
+    <TextView
+        android:id="@+id/tv_promoCode_amount"
+        style="@style/TextViewSize15"
+        android:text="Сумма по промокоду:"
+        app:layout_constraintStart_toStartOf="@id/tv_service_cost"
+        app:layout_constraintTop_toBottomOf="@id/tv_service_cost" />
+
+    <TextView
+        android:id="@+id/tv_promoCode_amount_content"
+        style="@style/TextViewSize15"
+        android:text="350 сом"
+        app:layout_constraintStart_toStartOf="@id/tv_service_cost_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_service_cost_content" />
+
+    <View
+        android:id="@+id/status_view"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tv_promoCode_amount"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        style="@style/TextViewSize15"
+        android:layout_marginStart="30dp"
+        android:text="Статус:"
+        app:layout_constraintStart_toStartOf="@id/status_view"
+        app:layout_constraintTop_toTopOf="@id/status_view" />
+
+    <TextView
+        android:id="@+id/tv_status_content"
+        style="@style/TextViewSize15"
+        android:layout_marginStart="84dp"
+        android:drawableStart="@drawable/ic_tick"
+        android:drawablePadding="8dp"
+        android:text="Подтвержден"
+        app:layout_constraintStart_toEndOf="@id/tv_status"
+        app:layout_constraintStart_toStartOf="@id/tv_status"
+        app:layout_constraintTop_toTopOf="@id/status_view" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_transfer"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/lightViolet"
+        android:text="Перенести запись"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/status_view" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="25dp"
+        android:backgroundTint="@color/lightViolet"
+        android:text="Отменить запись"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintStart_toEndOf="@id/btn_transfer"
+        app:layout_constraintTop_toTopOf="@id/btn_transfer" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/artisticViolet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_cancel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
