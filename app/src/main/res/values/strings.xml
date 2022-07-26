@@ -60,5 +60,14 @@
     <string name="check_the_appointment">Просмотреть запись</string>
     <string name="the_appointment_verification_failed">Запись не прошла успешно</string>
     <string name="back_to_appointments">Вернуться к записям</string>
+    <string name="profile">Профиль</string>
+    <string name="exit">Выйти</string>
+    <string name="on">Вкл</string>
+    <string name="off">Выкл</string>
+    <string name="settings">Настройки</string>
+    <string name="edit_profile">Редактировать профиль</string>
+    <string name="share">Поделиться</string>
+    <string name="off_notifications">Отключить уведомления</string>
+    <string name="my_appointments">Мои записи</string>
     <!--    Home end-->
 </resources>

@@ -5,10 +5,6 @@
     android:id="@+id/client_authentication_graph"
     tools:ignore="InvalidNavigation">
 
-    <action
-        android:id="@+id/action_global_to_clientMainFlowFragment"
-        app:destination="@id/clientMainFlowFragment"
-        app:popUpTo="@id/client_authentication_graph" />
 
     <fragment
         android:id="@+id/onboardFragment"
@@ -40,7 +36,7 @@
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up">
         <action
-            android:id="@+id/action_signUpFragment_to_mainFlowFragment"
+            android:id="@+id/action_signUpFragment_to_clientMainFlowFragment"
             app:destination="@id/clientMainFlowFragment" />
     </fragment>
 </navigation>

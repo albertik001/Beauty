@@ -2,14 +2,14 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_graph"
-    app:startDestination="@id/salonsFragment">
+    android:id="@+id/client_main_graph"
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.main.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_business_home">
+        tools:layout="@layout/fragment_home">
 
         <action
             android:id="@+id/action_homeFragment_to_salonFragment"
@@ -95,4 +95,42 @@
         android:name="com.geektech.beauty.presentation.ui.fragments.main.salons.SalonsFragment"
         android:label="SalonsFragment"
         tools:layout="@layout/fragment_salons" />
+
+    <fragment
+        android:id="@+id/appointmentsFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.appointment.AppointmentsFragment"
+        android:label="fragment_appointments"
+        tools:layout="@layout/fragment_appointments" />
+
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.profile.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.profile.settings.edit.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile">
+        <action
+            android:id="@+id/action_editProfileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
 </navigation>

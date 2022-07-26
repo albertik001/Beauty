@@ -2,11 +2,11 @@ package com.geektech.beauty.presentation.ui.fragments.authentication.signUp
 
 import android.util.Patterns
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.geektech.beauty.R
 import com.geektech.beauty.core.base.BaseFragment
 import com.geektech.beauty.core.data.local.preferences.AuthenticationPreferencesManager
-import com.geektech.beauty.core.extensions.mainNavController
 import com.geektech.beauty.core.extensions.navigateSafely
 import com.geektech.beauty.core.extensions.setStatusBarColor
 import com.geektech.beauty.databinding.FragmentSignUpBinding
@@ -52,7 +52,7 @@ class SignUpFragment :
                             getString(R.string.this_doesnt_look_like_email)
                     else -> {
                         authenticationPreferencesManager.isClientAuthenticated = true
-                        mainNavController(R.id.nav_host_fragment_container).navigateSafely(R.id.action_global_to_clientMainFlowFragment)
+                        findNavController().navigateSafely(R.id.action_signUpFragment_to_clientMainFlowFragment)
                     }
                 }
 

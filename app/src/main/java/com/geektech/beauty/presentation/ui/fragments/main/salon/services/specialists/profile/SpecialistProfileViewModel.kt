@@ -18,8 +18,8 @@ class SpecialistProfileViewModel @Inject constructor() : BaseViewModel() {
 
     private fun fetchSpecialistServices() {
         val list = listOf(
-            SpecialistServiceUI("Классика", 100, 1),
-            SpecialistServiceUI("Классика", 100, 1),
+            SpecialistServiceUI("Классика", 10000, 1),
+            SpecialistServiceUI("Классика", 0, 1),
             SpecialistServiceUI("Классика", 100, 1),
             SpecialistServiceUI("Классика", 100, 1),
             SpecialistServiceUI("Классика", 100, 1),
