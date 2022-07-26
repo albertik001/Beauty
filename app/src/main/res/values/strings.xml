@@ -66,5 +66,6 @@
     <string name="share">Поделиться</string>
     <string name="off_notifications">Отключить уведомления</string>
     <string name="language">Язык</string>
+    <string name="my_appointments">Мои записи</string>
     <!--    Home end-->
 </resources>

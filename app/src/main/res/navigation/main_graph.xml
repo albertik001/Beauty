@@ -9,7 +9,7 @@
         android:id="@+id/homeFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.main.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home">
 
         <action
             android:id="@+id/action_homeFragment_to_salonFragment"
@@ -21,7 +21,7 @@
         android:id="@+id/salonFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.main.home.salon.SalonFragment"
         android:label="fragment_salon"
-        tools:layout="@layout/fragment_salon" >
+        tools:layout="@layout/fragment_salon">
 
         <action
             android:id="@+id/action_salonFragment_to_specialistProfileFragment"
@@ -59,7 +59,7 @@
         android:id="@+id/specialistProfileFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.profile.SpecialistProfileFragment"
         android:label="fragment_specialist_profile"
-        tools:layout="@layout/fragment_specialist_profile" >
+        tools:layout="@layout/fragment_specialist_profile">
 
         <action
             android:id="@+id/action_specialistProfileFragment_to_verifyAppointmentFragment"
@@ -94,7 +94,15 @@
         android:id="@+id/salonsFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.main.salons.SalonsFragment"
         android:label="SalonsFragment"
-        tools:layout="@layout/fragment_salons"/>
+        tools:layout="@layout/fragment_salons" />
+
+    <fragment
+        android:id="@+id/appointmentsFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.salon.services.specialists.appointment.AppointmentsFragment"
+        android:label="fragment_appointments"
+        tools:layout="@layout/fragment_appointments" />
+
+
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.geektech.beauty.presentation.ui.fragments.main.profile.ProfileFragment"

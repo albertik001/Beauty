@@ -7,7 +7,7 @@
         android:icon="@drawable/ic_home"
         android:title="@string/main" />
     <item
-        android:id="@+id/appointmentFragment"
+        android:id="@+id/appointmentsFragment"
         android:enabled="true"
         android:icon="@drawable/ic_calendar"
         android:title="@string/appointment" />
