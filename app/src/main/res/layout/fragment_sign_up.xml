@@ -27,7 +27,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:gravity="left|start"
         app:boxBackgroundColor="@color/white80Transparency"
         app:boxBackgroundMode="outline"
         app:boxCornerRadiusBottomEnd="15dp"
@@ -47,6 +46,7 @@
             android:fontFamily="@font/inter_medium"
             android:hint="@string/first_name_second_name"
             android:maxLines="1"
+            android:paddingBottom="10dp"
             android:textAlignment="gravity"
             android:textColorHint="@color/dimmedGray"
             android:textSize="16sp" />
