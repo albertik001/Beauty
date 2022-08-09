@@ -9,6 +9,7 @@
     tools:context=".presentation.ui.fragments.main.home.salon.SalonFragment">
 
     <androidx.core.widget.NestedScrollView
+        android:overScrollMode="never"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
@@ -336,6 +337,8 @@
                 app:layout_constraintTop_toBottomOf="@id/tv_review_rating" />
 
             <RatingBar
+                android:focusable="false"
+                android:isIndicator="false"
                 android:id="@+id/rating_bar_master"
                 style="?android:ratingBarStyleIndicator"
                 android:layout_width="wrap_content"

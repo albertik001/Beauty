@@ -16,7 +16,7 @@ class SpecialistsViewModel @Inject constructor() : BaseViewModel() {
             ServiceCategorySpecialistUI(
                 "Парикмахер",
                 "https://res.heraldm.com/content/image/2021/04/12/20210412000524_0.jpg",
-                "Шыпыргуль-мастер индивидуал.",
+                "Айжан-мастер индивидуал.",
                 25,
                 4.0
             ),

@@ -3,10 +3,13 @@ package com.geektech.beauty.presentation.ui.fragments.main.salon.services.specia
 import com.geektech.beauty.core.base.BaseViewModel
 import com.geektech.beauty.presentation.models.AppointmentDetailsUI
 import com.geektech.beauty.presentation.models.SalonInformationUI
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import javax.inject.Inject
 
-class AppointmentsViewModel : BaseViewModel() {
+@HiltViewModel
+class AppointmentsViewModel @Inject constructor() : BaseViewModel() {
 
     private val _appointmentsState =
         MutableStateFlow<List<AppointmentDetailsUI>>(emptyList())
@@ -24,7 +27,7 @@ class AppointmentsViewModel : BaseViewModel() {
                 SalonInformationUI(
                     "8:00-24:00",
                     "24/7, без выходных",
-                    "ул. Кулиева 152/1",
+                    "ул. Айтматова 152/1",
                     "+996 555 666999",
                     "vi-bish@gmail.com"
                 )
@@ -35,7 +38,7 @@ class AppointmentsViewModel : BaseViewModel() {
                 "День 14:25",
                 "Маникюр-шеллак",
                 "20 мин",
-                "Шыпаргуль",
+                "Айгуль",
                 "4000 сом",
                 SalonInformationUI(
                     "7:00-23:00",

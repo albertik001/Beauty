@@ -10,4 +10,5 @@
         android:name="com.geektech.beauty.business.presentation.ui.fragments.main.home.BusinessHomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_business_home" />
+
 </navigation>

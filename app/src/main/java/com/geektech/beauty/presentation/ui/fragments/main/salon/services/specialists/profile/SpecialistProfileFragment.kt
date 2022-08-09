@@ -11,8 +11,9 @@ import com.geektech.beauty.core.extensions.navigateSafely
 import com.geektech.beauty.databinding.FragmentSpecialistProfileBinding
 import com.geektech.beauty.presentation.ui.adapters.home.salon.CustomersFeedbacksAdapter
 import com.geektech.beauty.presentation.ui.adapters.home.salon.specialist.SpecialistServicesAdapter
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class SpecialistProfileFragment :
     BaseFragment<FragmentSpecialistProfileBinding, SpecialistProfileViewModel>(R.layout.fragment_specialist_profile) {
     override val binding by viewBinding(FragmentSpecialistProfileBinding::bind)

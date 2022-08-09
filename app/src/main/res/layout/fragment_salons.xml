@@ -31,6 +31,7 @@
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:overScrollMode="never"
         android:id="@+id/rvSalons"
         android:layout_width="match_parent"
         android:layout_height="0dp"

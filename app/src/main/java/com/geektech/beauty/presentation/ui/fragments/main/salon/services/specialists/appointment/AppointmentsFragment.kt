@@ -7,7 +7,9 @@ import com.geektech.beauty.R
 import com.geektech.beauty.core.base.BaseFragment
 import com.geektech.beauty.databinding.FragmentAppointmentsBinding
 import com.geektech.beauty.presentation.ui.adapters.appointments.details.AppointmentDetailsAdapter
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class AppointmentsFragment :
     BaseFragment<FragmentAppointmentsBinding, AppointmentsViewModel>(R.layout.fragment_appointments) {
     override val binding by viewBinding(FragmentAppointmentsBinding::bind)

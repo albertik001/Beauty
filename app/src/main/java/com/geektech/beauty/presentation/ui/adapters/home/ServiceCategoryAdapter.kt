@@ -32,6 +32,7 @@ class ServiceCategoryAdapter :
             imageServiceCategories.loadImageWithGlide(it.imageBanner)
             tvNameService.text = it.nameService
 
+
         }
 
     }

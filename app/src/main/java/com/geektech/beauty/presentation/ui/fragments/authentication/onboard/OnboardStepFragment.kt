@@ -25,22 +25,25 @@ class OnboardStepFragment : Fragment(R.layout.fragment_onboard_step) {
 
             0 -> {
                 imOnboard.setImageResource(R.drawable.ic_onboard_first_step)
-                tvOnboardTitle.text = getString(R.string.distance_in_few_taps_from_next_appointment)
+                tvOnboardTitle.text =
+                    getString(com.geektech.beauty.core.R.string.distance_in_few_taps_from_next_appointment)
                 tvOnboardDescription.text =
-                    getString(R.string.the_application_to_salon_appointment_your_appointment_is_effortless_and_reliable)
+                    getString(com.geektech.beauty.core.R.string.the_application_to_salon_appointment_your_appointment_is_effortless_and_reliable)
             }
             1 -> {
-                imOnboard.setImageResource(R.drawable.ic_onboard_first_step)
-                tvOnboardTitle.text = getString(R.string.find_your_best_salon)
+                imOnboard.setImageResource(R.drawable.ic_boards_two)
+                tvOnboardTitle.text =
+                    getString(com.geektech.beauty.core.R.string.find_your_best_salon)
                 tvOnboardDescription.text =
-                    getString(R.string.you_can_find_salon_that_you_are_good_with)
+                    getString(com.geektech.beauty.core.R.string.you_can_find_salon_that_you_are_good_with)
 
             }
             2 -> {
-                imOnboard.setImageResource(R.drawable.ic_onboard_first_step)
-                tvOnboardTitle.text = getString(R.string.make_your_appointment_effortless)
+                imOnboard.setImageResource(R.drawable.ic_boards_third)
+                tvOnboardTitle.text =
+                    getString(com.geektech.beauty.core.R.string.make_your_appointment_effortless)
                 tvOnboardDescription.text =
-                    getString(R.string.online_appointment_choose_your_time_salon_and_procedure)
+                    getString(com.geektech.beauty.core.R.string.online_appointment_choose_your_time_salon_and_procedure)
 
             }
         }

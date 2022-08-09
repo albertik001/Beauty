@@ -34,64 +34,14 @@ class SpecialistProfileViewModel @Inject constructor() : BaseViewModel() {
         val list = listOf(
             CustomerFeedbackUI(
                 "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 5.0
-
+                "Кристина Ким",
+                "Приятная отмосфера, обслуживание класса люкс, специалисты своего дела!", 3.5
             ),
             CustomerFeedbackUI(
                 "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 3.5
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 2.3
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 1.0
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 1.2
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 5.0
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 3.5
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 2.3
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 1.0
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 1.2
-
-            ),
+                "Кристина Ким",
+                "Приятная отмосфера, обслуживание класса люкс, специалисты своего дела!", 3.5
+            )
         )
         _customersFeedbacksState.value = list
     }

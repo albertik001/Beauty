@@ -29,7 +29,7 @@ class UndefinedFlowFragment :
             UNDEFINED_KEY -> {
                 navGraph.setStartDestination(R.id.chooseClientOrSalonSideFragment)
                 setStatusBarLightAppearance(false)
-                setStatusBarColor(R.color.cendreBlue)
+                setStatusBarColor(com.geektech.beauty.core.R.color.cendreBlue)
             }
             CLIENT_ROLE_KEY -> navGraph.setStartDestination(R.id.clientAuthenticationFlowFragment)
             SALON_OWNER_ROLE_KEY -> navGraph.setStartDestination(R.id.businessAuthenticationFlowFragment)
