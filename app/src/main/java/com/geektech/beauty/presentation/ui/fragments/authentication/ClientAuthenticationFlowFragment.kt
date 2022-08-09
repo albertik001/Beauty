@@ -24,7 +24,7 @@ class ClientAuthenticationFlowFragment : BaseFlowFragment(
         when (authenticationPreferencesManager.isClientAuthenticated) {
             false -> {
                 navGraph.setStartDestination(R.id.onboardFragment)
-                setStatusBarColor(R.color.artisticViolet)
+                setStatusBarColor(com.geektech.beauty.core.R.color.artisticViolet)
             }
             true -> {
                 navGraph.setStartDestination(R.id.clientMainFlowFragment)

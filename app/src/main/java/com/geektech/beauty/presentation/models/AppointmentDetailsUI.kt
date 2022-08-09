@@ -1,6 +1,6 @@
 package com.geektech.beauty.presentation.models
 
-data class AppointmentDetailsUI(
+data class  AppointmentDetailsUI(
     val dateOfAppointments: String,
     val timeOfWork: String,
     val service: String,

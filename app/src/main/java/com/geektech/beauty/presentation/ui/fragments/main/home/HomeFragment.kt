@@ -16,12 +16,11 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeViewModel>(R.layout.f
     override val binding by viewBinding(FragmentHomeBinding::bind)
     override val viewModel by viewModels<HomeViewModel>()
     private val categoryAdapter = ServiceCategoryAdapter()
-
-
     private val popularAdapter = ServicePopularAdapter(this::onButtonClick)
 
 
     override fun performListeners() {
+
     }
 
     override fun initialize() {

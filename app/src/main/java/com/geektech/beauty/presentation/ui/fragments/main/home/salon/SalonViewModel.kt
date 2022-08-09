@@ -22,68 +22,22 @@ class SalonViewModel @Inject constructor() : BaseViewModel() {
     }
 
     private fun fetchFeedbacks() {
-        val list = listOf(
+        var list = listOf(
             CustomerFeedbackUI(
                 "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 5.0
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 3.5
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 2.3
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 1.0
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 1.2
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 5.0
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 3.5
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 2.3
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 1.0
-
-            ),
-            CustomerFeedbackUI(
-                "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
-                "Аня,500м от вас",
-                "Кунилингус неплох, anal fisting тоже на уровне", 1.2
-
-            ),
+                "Кристина Ким",
+                "Приятная отмосфера, обслуживание класса люкс, специалисты своего дела!", 3.5
+            )
         )
+        for (i in 1..20) {
+            list = listOf(
+                CustomerFeedbackUI(
+                    "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/06/a35d15c36fc7cc1cd02cd670b4c30cd5-1.jpg",
+                    "Кристина Ким",
+                    "Приятная отмосфера, обслуживание класса люкс, специалисты своего дела!", 3.5
+                )
+            )
+        }
         _customersFeedbacksState.value = list
     }
 
@@ -91,7 +45,7 @@ class SalonViewModel @Inject constructor() : BaseViewModel() {
         return SalonInformationUI(
             "8:00-24:00",
             "24/7, без выходных",
-            "ул. Кулиева 152/1",
+            "ул. Ибраимова 152/1",
             "+996 555 666999",
             "vi-bish@gmail.com"
         )
@@ -101,10 +55,10 @@ class SalonViewModel @Inject constructor() : BaseViewModel() {
         val listBtnServices = ArrayList<ButtonServicesUI>()
         for (i in 1..10) {
             listBtnServices.add(ButtonServicesUI("Парикмахер"))
-            listBtnServices.add(ButtonServicesUI("Шлюха"))
+            listBtnServices.add(ButtonServicesUI("Барбер"))
             listBtnServices.add(ButtonServicesUI("Ногтевой мастер"))
             listBtnServices.add(ButtonServicesUI("Парикмахер"))
-            listBtnServices.add(ButtonServicesUI("Шлюха"))
+            listBtnServices.add(ButtonServicesUI("Барбер"))
             listBtnServices.add(ButtonServicesUI("Ногтевой мастер"))
         }
         return listBtnServices
@@ -115,8 +69,8 @@ class SalonViewModel @Inject constructor() : BaseViewModel() {
         for (i in 1..12) {
             listTopSpecialist.add(
                 TopSpecialistUI(
-                    "https://icdn.lenta.ru/images/2013/09/20/16/20130920163740742/detail_b8aab4cfd27d9fa1ef3235fa046e7700.jpg",
-                    "Шыпаргуль-мастер инвидуал"
+                    "https://n1s1.hsmedia.ru/bf/93/4e/bf934eadd2b3ca9bbf983dedfa46198b/728x485_1_51d766d325aa86e6c23de6da39badc03@2121x1414_0xac120003_3094744421586782369.jpg",
+                    "Алина-мастер"
                 )
             )
         }
@@ -126,7 +80,7 @@ class SalonViewModel @Inject constructor() : BaseViewModel() {
     fun getSalonInterior(): ArrayList<InteriorUI> {
         val listSalonInterior = arrayListOf<InteriorUI>()
         for (i in 1..10) {
-            listSalonInterior.add(InteriorUI("https://upload.wikimedia.org/wikipedia/commons/8/89/Jaguar_X300_interior_%281995%2C_Warm_charcoal_%26_Cream%29.jpg"))
+            listSalonInterior.add(InteriorUI("https://media.admagazine.ru/photos/6221e2a66c8dba98f241fa9b/4:3/w_1600%2Cc_limit/%25D1%2581%25D0%25B5%25D0%25BB%25D1%258C%25D1%2581%25D0%25BA%25D0%25BE%25D1%2585%25D0%25BE%25D0%25B7.%2520%2520web%2520(7%2520of%252053).jpg"))
         }
         return listSalonInterior
     }
@@ -134,7 +88,7 @@ class SalonViewModel @Inject constructor() : BaseViewModel() {
     fun getOurSpecialistWork(): ArrayList<OurSpecialistWorkUI> {
         val listOurSpecialistWork = arrayListOf<OurSpecialistWorkUI>()
         for (i in 1..10) {
-            listOurSpecialistWork.add(OurSpecialistWorkUI("https://n1s2.starhit.ru/12/a2/f1/12a2f129636048a79f48009e07500636/444x460_0_05197487bc0706d7560da0de61000a39@480x497_0xac120003_18487509071595265174.jpg"))
+            listOurSpecialistWork.add(OurSpecialistWorkUI("https://namillion.com/wp-content/uploads/2017/09/zarplata-2-1.jpg"))
         }
         return listOurSpecialistWork
     }

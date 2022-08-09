@@ -22,7 +22,7 @@ class SignUpFragment :
     override val binding by viewBinding(FragmentSignUpBinding::bind)
     override val viewModel by viewModels<SignUpViewModel>()
     override fun constructViews() {
-        setStatusBarColor(R.color.snow)
+        setStatusBarColor(com.geektech.beauty.core.R.color.snow)
     }
 
     override fun performListeners() {
@@ -34,22 +34,24 @@ class SignUpFragment :
             binding.apply {
                 when {
                     etNameAndLastName.text.isNullOrBlank() && etEmail.text.isNullOrBlank() -> {
-                        etNameAndLastName.error = getString(R.string.this_field_mustnt_be_empty)
-                        etEmail.error = getString(R.string.this_field_mustnt_be_empty)
+                        etNameAndLastName.error =
+                            getString(com.geektech.beauty.core.R.string.this_field_mustnt_be_empty)
+                        etEmail.error =
+                            getString(com.geektech.beauty.core.R.string.this_field_mustnt_be_empty)
 
                     }
 
                     etNameAndLastName.text.toString().trim().length < 6 ->
                         etNameAndLastName.error =
-                            getString(R.string.first_name_and_last_name_must_contain_at_least_6_characters)
+                            getString(com.geektech.beauty.core.R.string.first_name_and_last_name_must_contain_at_least_6_characters)
                     etEmail.text.toString().trim().length < 6 ->
                         etEmail.error =
-                            getString(R.string.email_must_contain_at_least_8_characters)
+                            getString(com.geektech.beauty.core.R.string.email_must_contain_at_least_8_characters)
 
                     !Patterns.EMAIL_ADDRESS.matcher(etEmail.text.toString())
                         .matches() ->
                         etEmail.error =
-                            getString(R.string.this_doesnt_look_like_email)
+                            getString(com.geektech.beauty.core.R.string.this_doesnt_look_like_email)
                     else -> {
                         authenticationPreferencesManager.isClientAuthenticated = true
                         findNavController().navigateSafely(R.id.action_global_to_clientMainFlowFragment)

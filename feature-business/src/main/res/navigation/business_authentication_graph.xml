@@ -10,4 +10,9 @@
         android:name="com.geektech.beauty.business.presentation.ui.fragments.authentication.onboard.BusinessOnboardFragment"
         android:label="fragment_onboard"
         tools:layout="@layout/fragment_business_onboard" />
+    <fragment
+        android:id="@+id/businessHomeFragment"
+        android:name="com.geektech.beauty.business.presentation.ui.fragments.main.home.BusinessHomeFragment"
+        android:label="fragment_business_home"
+        tools:layout="@layout/fragment_business_home" />
 </navigation>

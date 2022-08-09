@@ -15,7 +15,6 @@ class ClientMainFlowFragment :
     private val binding by viewBinding(FragmentClientMainFlowBinding::bind)
     override fun setupNavigation(navController: NavController) {
         establishBottomNavigation(navController)
-
     }
 
     @OptIn(NavigationUiSaveStateControl::class)
