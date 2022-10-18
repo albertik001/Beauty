@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/day_theme_gradient_background"
+    tools:context=".presentation.ui.fragments.main.salon.services.specialists.appointment.VerifyAppointmentFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/baseToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_left">
+
+        <TextView
+            style="@style/BaseToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/appointment_verification" />
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcv_salon_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            tools:src="@tools:sample/avatars" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="BeStyle"
+        android:textColor="@color/cendreBlue"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@id/mcv_salon_image"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_appointment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="31 февраля,воскр"
+        android:textColor="@color/blueBlack"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_appointment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="Утро 9:45"
+        android:textColor="@color/blueBlack"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_appointment_date" />
+
+    <View
+        android:id="@+id/v_date_and_time"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/lightPurple"
+        app:layout_constraintTop_toBottomOf="@id/tv_appointment_time" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/masterWithColon"
+        android:textColor="@color/blueBlack"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_date_and_time" />
+
+    <TextView
+        android:id="@+id/tv_specialist_name_and_mastery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="Айдана-мастер индивидуал"
+        android:textColor="@color/blueBlack"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_date_and_time" />
+
+    <View
+        android:id="@+id/v_master_name_and_mastery"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/lightPurple"
+        app:layout_constraintTop_toBottomOf="@id/tv_specialist_name_and_mastery" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/serviceWithColon"
+        android:textColor="@color/blueBlack"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_master_name_and_mastery" />
+
+    <View
+        android:id="@+id/v_service"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/lightPurple"
+        app:layout_constraintTop_toBottomOf="@id/tv_specialist_service" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/service_duration_with_color"
+        android:textColor="@color/blueBlack"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_service" />
+
+    <TextView
+        android:id="@+id/tv_specialist_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="Стрижка"
+        android:textColor="@color/blueBlack"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_master_name_and_mastery" />
+
+
+    <TextView
+        android:id="@+id/tv_service_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="1 чаc"
+        android:textColor="@color/blueBlack"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_service" />
+
+    <View
+        android:id="@+id/v_service_duration"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/lightPurple"
+        app:layout_constraintTop_toBottomOf="@id/tv_service_duration" />
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/service_cost_with_colon"
+        android:textColor="@color/blueBlack"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_service_duration" />
+
+    <TextView
+        android:id="@+id/tv_service_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="100 сом"
+        android:textColor="@color/blueBlack"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_service_duration" />
+
+    <View
+        android:id="@+id/v_service_cost"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/lightPurple"
+        app:layout_constraintTop_toBottomOf="@id/tv_service_cost" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/serviceWithColon"
+        android:textColor="@color/cendreBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_service_cost" />
+
+    <TextView
+        android:id="@+id/tv_service_total_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="100 сом"
+        android:textColor="@color/cendreBlue"
+        android:textSize="21sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_service_cost" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_verify_the_appointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="@color/lightPurple"
+        android:text="@string/verify_appointment"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

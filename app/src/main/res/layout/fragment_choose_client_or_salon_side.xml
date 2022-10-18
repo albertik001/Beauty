@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cendreBlue"
+    tools:context=".presentation.ui.fragments.undefined.sideSelection.ChooseClientOrSalonSideFragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_tv_salon_or_a_client"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.425" />
+
+    <TextView
+        android:id="@+id/tv_do_you_have_your_salon_or_you_are_a_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="center"
+        android:maxEms="12"
+        android:minEms="12"
+        android:text="@string/do_you_have_your_salon_or_you_are_a_customer"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gl_tv_salon_or_a_client" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_btn_customer_client"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_choose_beApp_client"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/beApp_client"
+        android:textAllCaps="false"
+        android:textColor="@color/artisticViolet"
+        android:textSize="18sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gl_btn_customer_client" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_choose_beApp_business"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="33dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/beApp_business"
+        android:textAllCaps="false"
+        android:textColor="@color/artisticViolet"
+        android:textSize="18sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_choose_beApp_client" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

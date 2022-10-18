@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="baseToolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="background">@color/transparent</item>
+    </style>
+
+    <style name="BaseToolbarTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/artisticViolet</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="baseTextViewServices" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/artisticViolet</item>
+    </style>
+
+    <style name="baseTextViewServicesSmall" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/artisticViolet</item>
+    </style>
+
+    <style name="ratingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/unSelectedStarColor</item>
+        <item name="colorControlActivated">@color/starColor</item>
+    </style>
+
+    <style name="TextViewSize15">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/artisticViolet</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Beauty</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main">Главная</string>
+    <string name="account">Аккаунт</string>
+    <string name="salons">Салоны</string>
+    <string name="appointment">Запись</string>
+    <string name="do_you_have_your_salon_or_you_are_a_customer">У Вас свой салон или Вы клиент?</string>
+    <string name="beApp_client">BeApp-Client</string>
+    <!--    Onboard start-->
+    <string name="distance_in_few_taps_from_next_appointment">Pасстояние в несколько нажатий от следующей процедуры</string>
+    <string name="the_application_to_salon_appointment_your_appointment_is_effortless_and_reliable">Приложение для записей в салоны. Ваша запись проста и надежна!</string>
+    <string name="find_your_best_salon">Найди свой лучший салон</string>
+    <string name="you_can_find_salon_that_you_are_good_with">Вы можете найти салон подходящий Вам.</string>
+    <string name="make_your_appointment_effortless">Сделай свою запись-легкой</string>
+    <string name="online_appointment_choose_your_time_salon_and_procedure">Запись онлайн. Выберайте свое время, салон и процедуру</string>
+    <string name="proceed">Далее</string>
+    <string name="skip">Пропустить</string>
+    <string name="sign_up">Регистрация</string>
+    <string name="sign_in">Войти</string>
+    <string name="first_name_second_name">Имя Фамилия</string>
+    <string name="email">Адрес эл.почты</string>
+    <string name="or">или</string>
+    <string name="sign_in_with_google">Войти с Google</string>
+    <string name="this_field_mustnt_be_empty">Это поле не должно быть пустым</string>
+    <string name="first_name_and_last_name_must_contain_at_least_6_characters">Имя и фамилия должна состоять из хотя бы 6 символов</string>
+    <string name="email_must_contain_at_least_8_characters">Электронная почта должна составлять хотя бы 8 символов в длину</string>
+    <string name="this_doesnt_look_like_email">Это не похоже на электронную почту</string>
+    <string name="beApp_business">BeApp-Business</string>
+    <!--    Onboard end-->
+    <!--    NavDrawer start-->
+    <string name="language">Язык</string>
+    <string name="share_an_app">Поделиться приложением</string>
+    <string name="service_support">Служба поддержки</string>
+    <!--    Home start-->
+    <string name="name_beapp">BeApp</string>
+    <string name="hint_search">Поиск</string>
+    <string name="categories">Категории</string>
+    <string name="services_popular">Популярные</string>
+    <string name="services">Услуги</string>
+    <string name="haircut">Стрижка</string>
+    <string name="specialists">Специалисты</string>
+    <string name="master">Мастер</string>
+    <string name="masterWithColon">Мастер:</string>
+    <string name="description">Описание</string>
+    <string name="services_categories">Виды услуг</string>
+    <string name="calendar">Календарь</string>
+    <string name="share_feedback">Поделитесь отзывом</string>
+    <string name="give_feedback">Отправить отзыв</string>
+    <string name="customers_feedback">Отзывы клиентов</string>
+    <string name="make_an_appointment">Записаться</string>
+    <string name="appointment_verification">Подтверждение записи</string>
+    <string name="serviceWithColon">Услуга:</string>
+    <string name="service_duration_with_color">Длительность:</string>
+    <string name="service_cost_with_colon">Стоимость:</string>
+    <string name="verify_appointment">Подтвердить запись</string>
+    <string name="your_appointment_has_been_verified">Ваша запись прошла успешно</string>
+    <string name="ok">Ок</string>
+    <string name="check_the_appointment">Просмотреть запись</string>
+    <string name="the_appointment_verification_failed">Запись не прошла успешно</string>
+    <string name="back_to_appointments">Вернуться к записям</string>
+    <string name="profile">Профиль</string>
+    <string name="exit">Выйти</string>
+    <string name="on">Вкл</string>
+    <string name="off">Выкл</string>
+    <string name="settings">Настройки</string>
+    <string name="edit_profile">Редактировать профиль</string>
+    <string name="share">Поделиться</string>
+    <string name="off_notifications">Отключить уведомления</string>
+    <string name="my_appointments">Мои записи</string>
+    <!--    Home end-->
+</resources>

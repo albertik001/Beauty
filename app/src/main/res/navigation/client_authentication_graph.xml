@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/client_authentication_graph"
+    tools:ignore="InvalidNavigation">
+
+    <action
+        android:id="@+id/action_global_to_clientMainFlowFragment"
+        app:destination="@id/clientMainFlowFragment"
+        app:popUpTo="@id/client_authentication_graph" />
+    <fragment
+        android:id="@+id/onboardFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.authentication.onboard.OnboardFragment"
+        android:label="fragment_onboard"
+        tools:layout="@layout/fragment_business_onboard">
+        <action
+            android:id="@+id/action_onboardFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:popUpTo="@id/client_authentication_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientMainFlowFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.main.ClientMainFlowFragment"
+        android:label="fragment_main_flow"
+        tools:layout="@layout/fragment_client_main_flow" />
+    <fragment
+        android:id="@+id/chooseClientOrSalonSideFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.undefined.sideSelection.ChooseClientOrSalonSideFragment"
+        android:label="fragment_choose_client_or_salon_side"
+        tools:layout="@layout/fragment_choose_client_or_salon_side">
+        <action
+            android:id="@+id/action_chooseClientOrSalonSideFragment_to_onboardFragment"
+            app:destination="@id/onboardFragment"
+            app:popUpTo="@id/client_authentication_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.geektech.beauty.presentation.ui.fragments.authentication.signUp.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+</navigation>

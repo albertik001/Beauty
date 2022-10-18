@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_settings_background"
+    tools:context=".presentation.ui.fragments.main.profile.settings.SettingsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/baseToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/BaseToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings" />
+
+        <ImageView
+            android:id="@+id/menu_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_arrow_left"
+            tools:ignore="ContentDescription" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/tvImageEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvImageEdit"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvImageEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/edit_profile"
+        android:textColor="@color/lightPurple"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/imageEdit"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/imageShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/ic_share"
+        app:layout_constraintBottom_toBottomOf="@+id/tvImageShare"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvImageShare"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvImageShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/share"
+        android:textColor="@color/lightPurple"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/imageShare"
+        app:layout_constraintTop_toBottomOf="@+id/tvImageEdit" />
+
+    <ImageView
+        android:id="@+id/imageNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/ic_notifications"
+        app:layout_constraintBottom_toBottomOf="@+id/tvImageNotifications"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvImageNotifications"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvImageNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/off_notifications"
+        android:textColor="@color/lightPurple"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/imageNotifications"
+        app:layout_constraintTop_toBottomOf="@+id/tvImageShare" />
+
+    <ImageView
+        android:id="@+id/imageLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/ic_language"
+        app:layout_constraintBottom_toBottomOf="@+id/tvImageLanguage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvImageLanguage"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvImageLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/language"
+        android:textColor="@color/lightPurple"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/imageNotifications"
+        app:layout_constraintTop_toBottomOf="@+id/tvImageNotifications" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
